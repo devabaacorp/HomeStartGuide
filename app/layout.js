@@ -13,10 +13,10 @@ import Sidebar from "./components/Sidebar";
 import SearchOverlay from "./components/SearchOverlay";
 
 export const metadata = {
-  title: "Finbiz Business Consulting",
-  description: "Finbiz Business Consulting NextJs Template",
+  title: "HomeStartGuide | First-Time Buyer Support in the UK",
+  description:
+    "HomeStartGuide helps first-time home buyers in the UK understand the property buying process with clear guidance, planning support, and practical advice.",
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -32,5 +32,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-
