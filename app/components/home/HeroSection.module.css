@@ -1,0 +1,8 @@
+.hero_main_div {
+  margin-top: 126px;
+}
+@media screen and (max-width: 1199px) {
+  .hero_main_div {
+    margin-top: 115px;
+  }
+}
