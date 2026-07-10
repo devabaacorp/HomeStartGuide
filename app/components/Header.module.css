@@ -15,7 +15,7 @@
 .header {
   width: 100%;
   background: var(--hsg-white);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
   box-shadow: 0 6px 24px rgba(15, 47, 74, 0.08);
