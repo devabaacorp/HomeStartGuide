@@ -1,0 +1,116 @@
+.aboutSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-border: rgba(15, 47, 74, 0.14);
+}
+
+.aboutSection :global(.pre-title) {
+  color: var(--hsg-red);
+  font-weight: 800;
+}
+
+.aboutSection :global(.rts-title-area .title) {
+  color: var(--hsg-navy);
+}
+
+.aboutSection :global(.about-inner .disc) {
+  color: var(--hsg-text);
+  line-height: 1.75;
+}
+
+.aboutSection :global(.about-success-wrapper .single) {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.aboutSection :global(.about-success-wrapper .single i) {
+  color: var(--hsg-red);
+  margin-top: 4px;
+}
+
+.aboutSection :global(.about-success-wrapper .single .details) {
+  color: var(--hsg-text);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.disclaimer {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--hsg-red);
+  background: rgba(214, 40, 40, 0.06);
+  color: var(--hsg-muted);
+  font-size: 14px;
+  line-height: 1.65;
+  border-radius: 8px;
+}
+
+.aboutSection :global(.founder-details .title) {
+  color: var(--hsg-navy);
+}
+
+.aboutSection :global(.founder-details span) {
+  color: var(--hsg-red);
+  font-weight: 700;
+}
+
+.aboutSection :global(.call-details span) {
+  color: var(--hsg-muted);
+}
+
+.aboutSection :global(.call-details .title) {
+  color: var(--hsg-navy);
+}
+
+.aboutSection :global(.call-details .title:hover) {
+  color: var(--hsg-red);
+}
+
+.aboutSection :global(.experience) {
+  background: var(--hsg-red);
+}
+
+.aboutSection :global(.experience .title),
+.aboutSection :global(.experience .time),
+.aboutSection :global(.experience .disc) {
+  color: var(--hsg-white);
+}
+
+.aboutButtonWrapper {
+  margin-top: 30px;
+}
+
+.aboutButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 30px;
+  border-radius: 999px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.aboutButton:hover {
+  background: var(--hsg-red-dark);
+  color: var(--hsg-white);
+}
+
+@media screen and (max-width: 767px) {
+  .disclaimer {
+    font-size: 13px;
+  }
+
+  .aboutButton {
+    width: 100%;
+  }
+}
