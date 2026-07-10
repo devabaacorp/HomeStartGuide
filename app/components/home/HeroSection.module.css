@@ -1,8 +1,159 @@
 .hero_main_div {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-white: #ffffff;
+  --hsg-text: #243447;
+  --hsg-border: rgba(15, 47, 74, 0.18);
+
   margin-top: 126px;
 }
+
+.hero_main_div :global(.rts-banner-one) {
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 790px;
+}
+
+.hero_main_div :global(.pre-title span) {
+  color: var(--hsg-red);
+}
+
+.hero_main_div :global(.title span) {
+  color: var(--hsg-red);
+}
+
+.heroDescription {
+  max-width: 720px;
+  line-height: 1.75;
+}
+
+/* Primary Button */
+
+.hero_main_div :global(.rts-btn.btn-primary.color-h-black) {
+  background: var(--hsg-red) !important;
+  border-color: var(--hsg-red) !important;
+  color: var(--hsg-white) !important;
+}
+
+.hero_main_div :global(.rts-btn.btn-primary.color-h-black:hover) {
+  background: var(--hsg-red-dark) !important;
+  border-color: var(--hsg-red-dark) !important;
+  color: var(--hsg-white) !important;
+}
+
+/* Hero Buttons */
+
+.heroButtons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+  max-width: 700px;
+  margin-top: 28px;
+  align-items: center;
+}
+
+.heroButtons :global(.rts-btn),
+.secondaryBtn {
+  width: fit-content;
+  min-height: 54px;
+  padding: 0 28px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.secondaryBtn {
+  border-radius: 999px;
+  border: 1px solid var(--hsg-border);
+  background: var(--hsg-white);
+  color: var(--hsg-navy);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  background: var(--hsg-navy);
+  color: var(--hsg-white);
+}
+
+/* Checklist */
+
+.heroChecklist {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  max-width: 700px;
+}
+
+.heroChecklist li {
+  color: var(--hsg-text);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.heroChecklist li::before {
+  content: "✓";
+  color: var(--hsg-red);
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+/* Responsive */
+
 @media screen and (max-width: 1199px) {
   .hero_main_div {
     margin-top: 115px;
+  }
+
+  .heroContent {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .heroButtons,
+  .heroChecklist {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero_main_div {
+    margin-top: 112px;
+  }
+
+  .heroButtons {
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .heroButtons :global(.rts-btn),
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .heroChecklist {
+    margin-top: 18px;
+    gap: 9px;
+  }
+
+  .heroChecklist li {
+    font-size: 14px;
   }
 }
