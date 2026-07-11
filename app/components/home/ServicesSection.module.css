@@ -1,0 +1,107 @@
+.servicesSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-light-red: rgba(214, 40, 40, 0.08);
+}
+
+.servicesSection :global(.pre-title) {
+  color: var(--hsg-red);
+  font-weight: 800;
+}
+
+.servicesSection :global(.rts-title-area.service .title) {
+  color: var(--hsg-navy);
+}
+
+.sectionIntro {
+  max-width: 760px;
+  margin: 18px auto 0;
+  color: var(--hsg-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.servicesSection :global(.service-one-inner) {
+  height: 100%;
+  transition: 0.25s ease;
+}
+
+.servicesSection :global(.service-one-inner:hover) {
+  transform: translateY(-6px);
+}
+
+.servicesSection :global(.service-one-inner .thumbnail) {
+  background: var(--hsg-light-red);
+  border-radius: 14px;
+}
+
+.servicesSection :global(.service-details .title) {
+  color: var(--hsg-navy);
+  transition: 0.2s ease;
+}
+
+.servicesSection :global(.service-details .title:hover) {
+  color: var(--hsg-red);
+}
+
+.servicesSection :global(.service-details .disc) {
+  color: var(--hsg-text);
+  line-height: 1.7;
+}
+
+.servicesSection :global(.rts-read-more.btn-primary) {
+  color: var(--hsg-red) !important;
+  font-weight: 800;
+}
+
+.servicesSection :global(.rts-read-more.btn-primary i) {
+  color: var(--hsg-red) !important;
+}
+
+.servicesSection :global(.rts-read-more.btn-primary:hover) {
+  color: var(--hsg-red-dark) !important;
+}
+
+.servicesSection :global(.cta-one-bg) {
+  background: var(--hsg-red);
+}
+
+.servicesSection :global(.cta-one-inner .title) {
+  color: var(--hsg-white);
+}
+
+.servicesSection :global(.rts-btn.btn-white) {
+  color: var(--hsg-red) !important;
+  font-weight: 800;
+}
+
+.servicesSection :global(.rts-btn.btn-white:hover) {
+  background: var(--hsg-navy) !important;
+  color: var(--hsg-white) !important;
+}
+
+.serviceDisclaimer {
+  max-width: 980px;
+  margin: 24px auto 0;
+  padding: 14px 18px;
+  background: var(--hsg-light-red);
+  border-left: 4px solid var(--hsg-red);
+  border-radius: 8px;
+  color: var(--hsg-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 767px) {
+  .sectionIntro {
+    font-size: 15px;
+  }
+
+  .serviceDisclaimer {
+    font-size: 13px;
+  }
+}
