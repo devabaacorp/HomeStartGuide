@@ -1,0 +1,273 @@
+.teamSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-soft: #fff8f8;
+  --hsg-light-red: rgba(214, 40, 40, 0.08);
+  --hsg-border: rgba(15, 47, 74, 0.12);
+
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background: linear-gradient(
+    180deg,
+    var(--hsg-white) 0%,
+    var(--hsg-soft) 100%
+  );
+}
+
+.backgroundText {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(15, 47, 74, 0.08);
+  font-size: clamp(54px, 9vw, 135px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.teamSection :global(.container) {
+  position: relative;
+  z-index: 1;
+}
+
+.sectionHeader {
+  max-width: 880px;
+  margin: 0 auto 54px;
+  text-align: center;
+}
+
+.preTitle {
+  margin-bottom: 12px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--hsg-navy);
+  font-size: 42px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.introText {
+  max-width: 760px;
+  margin: 18px auto 0;
+  color: var(--hsg-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.teamCard {
+  height: 100%;
+  border: 1px solid var(--hsg-border);
+  border-radius: 26px;
+  background: var(--hsg-white);
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(15, 47, 74, 0.07);
+  transition: 0.25s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-7px);
+  border-color: rgba(214, 40, 40, 0.3);
+  box-shadow: 0 24px 60px rgba(15, 47, 74, 0.12);
+}
+
+.imageWrapper {
+  height: 285px;
+  overflow: hidden;
+  background: var(--hsg-light-red);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: 0.35s ease;
+}
+
+.teamCard:hover .imageWrapper img {
+  transform: scale(1.06);
+}
+
+.cardContent {
+  padding: 28px 24px 30px;
+}
+
+.cardContent span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--hsg-red);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.cardContent h3 {
+  margin: 0 0 13px;
+  color: var(--hsg-navy);
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.28;
+}
+
+.cardContent p {
+  margin: 0;
+  color: var(--hsg-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.cardButton {
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.cardButton:hover {
+  color: var(--hsg-red-dark);
+}
+
+.noticeBox {
+  margin-top: 44px;
+  padding: 28px 32px;
+  border-radius: 24px;
+  background: var(--hsg-navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.noticeBox p {
+  margin: 0;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.noticeButton {
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.noticeButton:hover {
+  background: var(--hsg-red-dark);
+  color: var(--hsg-white);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .imageWrapper {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .teamSection {
+    padding: 90px 0;
+  }
+
+  .backgroundText {
+    top: 30px;
+    font-size: clamp(44px, 12vw, 90px);
+  }
+
+  .sectionHeader {
+    margin-bottom: 42px;
+  }
+
+  .noticeBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teamSection {
+    padding: 78px 0;
+  }
+
+  .title {
+    font-size: 31px;
+  }
+
+  .introText {
+    font-size: 15px;
+  }
+
+  .imageWrapper {
+    height: 255px;
+  }
+
+  .cardContent {
+    padding: 26px 22px 28px;
+  }
+
+  .noticeBox {
+    padding: 26px 24px;
+  }
+
+  .noticeButton {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backgroundText {
+    top: 24px;
+    font-size: 42px;
+    white-space: normal;
+    line-height: 1.05;
+  }
+
+  .teamSection {
+    padding: 72px 0;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .imageWrapper {
+    height: 235px;
+  }
+}
