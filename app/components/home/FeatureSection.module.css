@@ -1,0 +1,313 @@
+.featureSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-soft: #fff8f8;
+  --hsg-light-red: rgba(214, 40, 40, 0.08);
+  --hsg-border: rgba(15, 47, 74, 0.12);
+
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background: linear-gradient(180deg, #ffffff 0%, var(--hsg-soft) 100%);
+}
+
+.backgroundText {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(15, 47, 74, 0.08);
+  font-size: clamp(54px, 9vw, 135px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.featureSection :global(.container) {
+  position: relative;
+  z-index: 1;
+}
+
+.imageCard {
+  position: relative;
+  padding: 24px;
+  border-radius: 28px;
+  background: var(--hsg-white);
+  box-shadow: 0 20px 60px rgba(15, 47, 74, 0.1);
+  overflow: hidden;
+}
+
+.imageCard img {
+  width: 100%;
+  display: block;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.imageBadge {
+  position: absolute;
+  left: 44px;
+  right: 44px;
+  bottom: 44px;
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: var(--hsg-red);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 18px 40px rgba(214, 40, 40, 0.28);
+}
+
+.imageBadge span {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--hsg-white);
+  color: var(--hsg-red);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+.imageBadge p {
+  margin: 0;
+  color: var(--hsg-white);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.contentBox {
+  padding-left: 30px;
+}
+
+.preTitle {
+  margin-bottom: 12px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--hsg-navy);
+  font-size: 44px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.description {
+  margin: 20px 0 0;
+  color: var(--hsg-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.mistakeList {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.mistakeItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 16px;
+  border: 1px solid var(--hsg-border);
+  border-radius: 14px;
+  background: var(--hsg-white);
+  transition: 0.25s ease;
+}
+
+.mistakeItem:hover {
+  transform: translateX(5px);
+  border-color: rgba(214, 40, 40, 0.3);
+  box-shadow: 0 12px 30px rgba(15, 47, 74, 0.07);
+}
+
+.mistakeItem i {
+  margin-top: 4px;
+  color: var(--hsg-red);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.mistakeItem p {
+  margin: 0;
+  color: var(--hsg-text);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ctaRow {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.primaryButton,
+.secondaryButton {
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.primaryButton {
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+}
+
+.primaryButton:hover {
+  background: var(--hsg-red-dark);
+  color: var(--hsg-white);
+}
+
+.secondaryButton {
+  border: 1px solid var(--hsg-border);
+  background: var(--hsg-white);
+  color: var(--hsg-navy);
+}
+
+.secondaryButton:hover {
+  background: var(--hsg-navy);
+  color: var(--hsg-white);
+}
+
+.disclaimer {
+  margin-top: 24px;
+  padding: 14px 18px;
+  border-left: 4px solid var(--hsg-red);
+  border-radius: 10px;
+  background: var(--hsg-light-red);
+  color: var(--hsg-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .contentBox {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .featureSection {
+    padding: 90px 0;
+  }
+
+  .backgroundText {
+    top: 30px;
+    font-size: clamp(44px, 12vw, 90px);
+  }
+
+  .imageCard {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .featureSection {
+    padding: 78px 0;
+  }
+
+  .title {
+    font-size: 31px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .imageCard {
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .imageCard img {
+    border-radius: 18px;
+  }
+
+  .imageBadge {
+    position: static;
+    margin-top: 16px;
+    padding: 16px;
+  }
+
+  .imageBadge span {
+    width: 54px;
+    height: 54px;
+    font-size: 14px;
+  }
+
+  .imageBadge p {
+    font-size: 15px;
+  }
+
+  .ctaRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .disclaimer {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backgroundText {
+    top: 24px;
+    font-size: 42px;
+    white-space: normal;
+    line-height: 1.05;
+  }
+
+  .featureSection {
+    padding: 72px 0;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .mistakeItem {
+    padding: 14px;
+  }
+}
