@@ -11,6 +11,7 @@ import TestimonialsSection from "./components/home/TestimonialsSection";
 import BlogSection from "./components/home/BlogSection";
 import ContactSection from "./components/home/ContactSection";
 import MapSection from "./components/home/MapSection";
+import FAQSection from "./components/home/FAQSection";
 
 export default function Page() {
   return (
@@ -28,6 +29,7 @@ export default function Page() {
       <BlogSection />
       <ContactSection />
       <MapSection />
+      <FAQSection />
     </>
   );
 }

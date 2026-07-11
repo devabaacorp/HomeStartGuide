@@ -1,0 +1,271 @@
+.faqSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-soft: #fff8f8;
+  --hsg-light-red: rgba(214, 40, 40, 0.08);
+  --hsg-border: rgba(15, 47, 74, 0.12);
+
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.backgroundText {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(15, 47, 74, 0.08);
+  font-size: clamp(54px, 9vw, 135px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.faqSection :global(.container) {
+  position: relative;
+  z-index: 1;
+}
+
+.leftContent {
+  position: sticky;
+  top: 110px;
+}
+
+.preTitle {
+  margin: 0 0 12px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.leftContent h2 {
+  margin: 0;
+  color: var(--hsg-navy);
+  font-size: 42px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.leftContent > p {
+  margin: 18px 0 0;
+  color: var(--hsg-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.ctaBox {
+  margin-top: 30px;
+  padding: 28px;
+  border-radius: 24px;
+  background: var(--hsg-navy);
+}
+
+.ctaBox h3 {
+  margin: 0 0 8px;
+  color: var(--hsg-white);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.ctaBox p {
+  margin: 0 0 20px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.ctaButton {
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: var(--hsg-red-dark);
+  color: var(--hsg-white);
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faqItem {
+  border: 1px solid var(--hsg-border);
+  border-radius: 20px;
+  background: var(--hsg-soft);
+  box-shadow: 0 14px 35px rgba(15, 47, 74, 0.05);
+  overflow: hidden;
+}
+
+.faqItem summary {
+  padding: 24px 28px;
+  color: var(--hsg-navy);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.45;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  content: "+";
+  margin-left: auto;
+  color: var(--hsg-red);
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.faqItem[open] summary::after {
+  content: "−";
+}
+
+.faqItem summary span {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.faqItem p {
+  margin: 0;
+  padding: 0 28px 26px 86px;
+  color: var(--hsg-muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.disclaimer {
+  margin: 24px 0 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--hsg-red);
+  border-radius: 10px;
+  background: var(--hsg-light-red);
+  color: var(--hsg-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1199px) {
+  .leftContent h2 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .faqSection {
+    padding: 90px 0;
+  }
+
+  .backgroundText {
+    top: 30px;
+    font-size: clamp(44px, 12vw, 90px);
+  }
+
+  .leftContent {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faqSection {
+    padding: 78px 0;
+  }
+
+  .leftContent h2 {
+    font-size: 31px;
+  }
+
+  .leftContent > p {
+    font-size: 15px;
+  }
+
+  .faqItem summary {
+    padding: 22px;
+    font-size: 16px;
+    align-items: flex-start;
+  }
+
+  .faqItem p {
+    padding: 0 22px 24px 22px;
+    font-size: 14px;
+  }
+
+  .ctaBox {
+    padding: 24px;
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+
+  .disclaimer {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backgroundText {
+    top: 24px;
+    font-size: 42px;
+    white-space: normal;
+    line-height: 1.05;
+  }
+
+  .faqSection {
+    padding: 72px 0;
+  }
+
+  .leftContent h2 {
+    font-size: 27px;
+  }
+
+  .faqItem summary {
+    gap: 12px;
+  }
+
+  .faqItem summary span {
+    width: 36px;
+    height: 36px;
+  }
+}
