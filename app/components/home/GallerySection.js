@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import style from "./GallerySection.module.css";
 
 export default function GallerySection() {
   return (
     <main>
-      <div>
+      <div className={style.gallerySection_parent_div}>
         <div className="rts-gallery-area rts-section-gap gallery-bg bg_image">
           <div className="container">
             <div className="row">
