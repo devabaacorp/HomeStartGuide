@@ -12,6 +12,7 @@ import BlogSection from "./components/home/BlogSection";
 import ContactSection from "./components/home/ContactSection";
 import MapSection from "./components/home/MapSection";
 import FAQSection from "./components/home/FAQSection";
+import MortgageCalculatorCTASection from "./components/home/MortgageCalculatorCTASection";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <MortgageCalculatorCTASection />
       <BusinessGoalSection />
       <CounterSection />
       <GallerySection />

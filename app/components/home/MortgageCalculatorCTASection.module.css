@@ -1,0 +1,319 @@
+.mortgageSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-soft: #fff8f8;
+  --hsg-light-red: rgba(214, 40, 40, 0.08);
+  --hsg-border: rgba(15, 47, 74, 0.12);
+
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background: linear-gradient(180deg, #ffffff 0%, var(--hsg-soft) 100%);
+}
+
+.backgroundText {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(15, 47, 74, 0.08);
+  font-size: clamp(54px, 9vw, 135px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.mortgageSection :global(.container) {
+  position: relative;
+  z-index: 1;
+}
+
+.leftContent {
+  max-width: 650px;
+}
+
+.preTitle {
+  margin: 0 0 12px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.leftContent h2 {
+  margin: 0;
+  color: var(--hsg-navy);
+  font-size: 42px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.leftContent > p {
+  margin: 18px 0 0;
+  color: var(--hsg-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.buttonGroup {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.primaryButton,
+.secondaryButton {
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.primaryButton {
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+}
+
+.primaryButton:hover {
+  background: var(--hsg-red-dark);
+  color: var(--hsg-white);
+}
+
+.secondaryButton {
+  border: 1px solid var(--hsg-border);
+  background: var(--hsg-white);
+  color: var(--hsg-navy);
+}
+
+.secondaryButton:hover {
+  border-color: rgba(214, 40, 40, 0.4);
+  color: var(--hsg-red);
+}
+
+.disclaimer {
+  margin-top: 24px !important;
+  padding: 14px 18px;
+  border-left: 4px solid var(--hsg-red);
+  border-radius: 10px;
+  background: var(--hsg-light-red);
+  color: var(--hsg-muted) !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+
+.calculatorCard {
+  padding: 34px;
+  border: 1px solid var(--hsg-border);
+  border-radius: 30px;
+  background: var(--hsg-white);
+  box-shadow: 0 22px 60px rgba(15, 47, 74, 0.1);
+}
+
+.cardHeader {
+  margin-bottom: 24px;
+}
+
+.cardHeader span {
+  color: var(--hsg-red);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cardHeader h3 {
+  margin: 8px 0 10px;
+  color: var(--hsg-navy);
+  font-size: 30px;
+  line-height: 1.22;
+  font-weight: 900;
+}
+
+.cardHeader p {
+  margin: 0;
+  color: var(--hsg-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.mockCalculator {
+  padding: 24px;
+  border-radius: 24px;
+  background: var(--hsg-navy);
+}
+
+.mockRow,
+.mockResult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.mockRow {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mockRow span,
+.mockResult span {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mockRow strong,
+.mockResult strong {
+  color: var(--hsg-white);
+  font-size: 15px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.mockResult {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--hsg-red);
+}
+
+.pointsList {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pointItem {
+  padding: 18px;
+  border: 1px solid var(--hsg-border);
+  border-radius: 18px;
+  background: var(--hsg-soft);
+  display: flex;
+  gap: 16px;
+}
+
+.pointItem > span {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.pointItem h4 {
+  margin: 0 0 6px;
+  color: var(--hsg-navy);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.pointItem p {
+  margin: 0;
+  color: var(--hsg-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1199px) {
+  .leftContent h2 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mortgageSection {
+    padding: 90px 0;
+  }
+
+  .backgroundText {
+    top: 30px;
+    font-size: clamp(44px, 12vw, 90px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mortgageSection {
+    padding: 78px 0;
+  }
+
+  .leftContent h2 {
+    font-size: 31px;
+  }
+
+  .leftContent > p {
+    font-size: 15px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .calculatorCard {
+    padding: 26px 20px;
+    border-radius: 24px;
+  }
+
+  .cardHeader h3 {
+    font-size: 25px;
+  }
+
+  .mockRow,
+  .mockResult {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .mockRow strong,
+  .mockResult strong {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backgroundText {
+    top: 24px;
+    font-size: 42px;
+    white-space: normal;
+    line-height: 1.05;
+  }
+
+  .mortgageSection {
+    padding: 72px 0;
+  }
+
+  .leftContent h2 {
+    font-size: 27px;
+  }
+
+  .pointItem {
+    flex-direction: column;
+  }
+}
