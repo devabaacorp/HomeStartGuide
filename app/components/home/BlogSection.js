@@ -9,7 +9,7 @@ const blogPosts = [
     title: "How To Prepare Before Buying Your First Home",
     description:
       "Understand affordability, deposit planning, documents, credit readiness, and the first practical steps before starting your property search.",
-    href: "/blog-grid",
+    href: "/#blog-section",
   },
   {
     image: "/assets/images/blog/03.jpg",
@@ -18,7 +18,7 @@ const blogPosts = [
     title: "Mortgage Readiness Checklist For First-Time Buyers",
     description:
       "Learn what to prepare before speaking with mortgage professionals, including income, expenses, deposit, credit history, and key documents.",
-    href: "/blog-grid",
+    href: "/#blog-section",
   },
   {
     image: "/assets/images/blog/04.jpg",
@@ -27,7 +27,7 @@ const blogPosts = [
     title: "Common Mistakes To Avoid Before Making An Offer",
     description:
       "Avoid emotional offers, hidden costs, weak location research, and unclear understanding of surveys, legal steps, and completion.",
-    href: "/blog-grid",
+    href: "/#blog-section",
   },
 ];
 

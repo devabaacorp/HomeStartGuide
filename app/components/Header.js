@@ -7,27 +7,27 @@ import styles from "./Header.module.css";
 const services = [
   {
     label: "First-Time Buyer Consultation",
-    href: "/our-service#first-time-buyer-consultation",
+    href: "/#services",
   },
   {
     label: "Mortgage Guidance",
-    href: "/our-service#mortgage-guidance",
+    href: "/#mortgage-guidance",
   },
   {
     label: "Government Scheme Guidance",
-    href: "/our-service#government-schemes",
+    href: "/#services",
   },
   {
     label: "Property Search Support",
-    href: "/our-service#property-search-support",
+    href: "/#services",
   },
   {
     label: "Offer & Negotiation Guidance",
-    href: "/our-service#offer-negotiation",
+    href: "/#services",
   },
   {
     label: "Conveyancing Guidance",
-    href: "/our-service#conveyancing-guidance",
+    href: "/#services",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function Header() {
 
                 <span className={styles.topText}>
                   <span>📍</span>
-                  40 Winsford Terrace, London 3SD 1BS
+                  40 Winsford Terrace, Great Cambridge Road, London N18 1BS
                 </span>
               </div>
 
@@ -199,7 +199,9 @@ export default function Header() {
 
         <div className={styles.drawerContact}>
           <a href="tel:+447466831291">☎ +44 7466 831291</a>
-          <span>📍 40 Winsford Terrace, London 3SD 1BS</span>
+          <span>
+            📍 40 Winsford Terrace, Great Cambridge Road, London N18 1BS
+          </span>
         </div>
 
         <nav className={styles.mobileNav} aria-label="Mobile navigation">
