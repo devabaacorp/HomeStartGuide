@@ -1,0 +1,636 @@
+.breadcrumb {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-soft: #fff8f8;
+  --hsg-light-red: rgba(214, 40, 40, 0.08);
+  --hsg-border: rgba(15, 47, 74, 0.12);
+
+  padding: 150px 0 95px;
+  background:
+    linear-gradient(135deg, rgba(15, 47, 74, 0.92), rgba(15, 47, 74, 0.82)),
+    url("/assets/images/about/main/about-03.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.breadcrumbInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.breadcrumbInner p {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.breadcrumbInner h1 {
+  margin: 0;
+  color: var(--hsg-white);
+  font-size: 58px;
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.breadLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.breadLinks a {
+  color: var(--hsg-white);
+  text-decoration: none;
+}
+
+.aboutHero,
+.supportSection,
+.missionSection,
+.roadmapSection,
+.faqSection,
+.ctaSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-soft: #fff8f8;
+  --hsg-light-red: rgba(214, 40, 40, 0.08);
+  --hsg-border: rgba(15, 47, 74, 0.12);
+}
+
+.aboutHero {
+  padding: 110px 0;
+  background: var(--hsg-white);
+}
+
+.imageGrid {
+  position: relative;
+  min-height: 570px;
+}
+
+.mainImage,
+.secondaryImage {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 22px 60px rgba(15, 47, 74, 0.14);
+}
+
+.mainImage {
+  left: 0;
+  top: 0;
+  width: 76%;
+  height: 430px;
+}
+
+.secondaryImage {
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  height: 330px;
+  border: 10px solid var(--hsg-white);
+}
+
+.experienceBadge {
+  position: absolute;
+  left: 28px;
+  bottom: 34px;
+  max-width: 250px;
+  padding: 22px;
+  border-radius: 22px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  box-shadow: 0 18px 40px rgba(214, 40, 40, 0.28);
+}
+
+.experienceBadge strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--hsg-white);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.experienceBadge span {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.preTitle {
+  margin: 0 0 12px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.heroContent h2,
+.sectionHeader h2,
+.missionBox h2,
+.roadmapIntro h2,
+.ctaBox h2 {
+  margin: 0;
+  color: var(--hsg-navy);
+  font-size: 42px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.heroContent > p,
+.sectionHeader > p,
+.missionBox > p,
+.roadmapIntro > p {
+  margin: 18px 0 0;
+  color: var(--hsg-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.heroButtons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.primaryButton,
+.secondaryButton,
+.ctaButton {
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.primaryButton,
+.ctaButton {
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+}
+
+.primaryButton:hover,
+.ctaButton:hover {
+  background: var(--hsg-red-dark);
+  color: var(--hsg-white);
+}
+
+.secondaryButton {
+  border: 1px solid var(--hsg-border);
+  background: var(--hsg-white);
+  color: var(--hsg-navy);
+}
+
+.secondaryButton:hover {
+  border-color: rgba(214, 40, 40, 0.4);
+  color: var(--hsg-red);
+}
+
+.notice {
+  margin-top: 24px;
+  padding: 14px 18px;
+  border-left: 4px solid var(--hsg-red);
+  border-radius: 10px;
+  background: var(--hsg-light-red);
+  color: var(--hsg-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.supportSection {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background: linear-gradient(180deg, #ffffff 0%, var(--hsg-soft) 100%);
+}
+
+.backgroundText {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(15, 47, 74, 0.08);
+  font-size: clamp(54px, 9vw, 135px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.supportSection :global(.container) {
+  position: relative;
+  z-index: 1;
+}
+
+.sectionHeader {
+  max-width: 860px;
+  margin: 0 auto 54px;
+  text-align: center;
+}
+
+.supportCard {
+  height: 100%;
+  padding: 32px 26px;
+  border: 1px solid var(--hsg-border);
+  border-radius: 26px;
+  background: var(--hsg-white);
+  box-shadow: 0 18px 45px rgba(15, 47, 74, 0.07);
+  transition: 0.25s ease;
+}
+
+.supportCard:hover {
+  transform: translateY(-7px);
+  border-color: rgba(214, 40, 40, 0.28);
+  box-shadow: 0 24px 60px rgba(15, 47, 74, 0.12);
+}
+
+.supportCard span {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.supportCard h3,
+.valueCard h3 {
+  margin: 0 0 12px;
+  color: var(--hsg-navy);
+  font-size: 22px;
+  line-height: 1.28;
+  font-weight: 900;
+}
+
+.supportCard p,
+.valueCard p {
+  margin: 0;
+  color: var(--hsg-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.missionSection {
+  padding: 110px 0;
+  background: var(--hsg-navy);
+}
+
+.missionBox h2,
+.missionBox > p {
+  color: var(--hsg-white);
+}
+
+.missionBox > p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.valueCard {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.valueCard h3 {
+  color: var(--hsg-white);
+}
+
+.valueCard p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.roadmapSection {
+  padding: 110px 0;
+  background: var(--hsg-white);
+}
+
+.roadmapIntro {
+  position: sticky;
+  top: 110px;
+}
+
+.roadmapIntro .primaryButton {
+  margin-top: 30px;
+}
+
+.roadmapList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.roadmapItem {
+  padding: 22px;
+  border: 1px solid var(--hsg-border);
+  border-radius: 20px;
+  background: var(--hsg-soft);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.roadmapItem span {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.roadmapItem p {
+  margin: 0;
+  color: var(--hsg-text);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.faqSection {
+  padding: 110px 0;
+  background: linear-gradient(180deg, #ffffff 0%, var(--hsg-soft) 100%);
+}
+
+.faqList {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.faqItem {
+  border: 1px solid var(--hsg-border);
+  border-radius: 20px;
+  background: var(--hsg-white);
+  box-shadow: 0 14px 35px rgba(15, 47, 74, 0.05);
+  overflow: hidden;
+}
+
+.faqItem summary {
+  padding: 24px 28px;
+  color: var(--hsg-navy);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  content: "+";
+  float: right;
+  color: var(--hsg-red);
+  font-size: 26px;
+  line-height: 1;
+}
+
+.faqItem[open] summary::after {
+  content: "−";
+}
+
+.faqItem p {
+  margin: 0;
+  padding: 0 28px 26px;
+  color: var(--hsg-muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.ctaSection {
+  padding: 100px 0;
+  background: var(--hsg-white);
+}
+
+.ctaBox {
+  padding: 44px;
+  border-radius: 30px;
+  background: var(--hsg-navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.ctaBox p {
+  margin: 0 0 8px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ctaBox h2 {
+  color: var(--hsg-white);
+}
+
+.ctaBox span {
+  display: block;
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1199px) {
+  .heroContent h2,
+  .sectionHeader h2,
+  .missionBox h2,
+  .roadmapIntro h2,
+  .ctaBox h2 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .breadcrumb {
+    padding: 130px 0 80px;
+  }
+
+  .breadcrumbInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .aboutHero,
+  .supportSection,
+  .missionSection,
+  .roadmapSection,
+  .faqSection,
+  .ctaSection {
+    padding: 90px 0;
+  }
+
+  .imageGrid {
+    min-height: 520px;
+  }
+
+  .roadmapIntro {
+    position: static;
+  }
+
+  .backgroundText {
+    top: 30px;
+    font-size: clamp(44px, 12vw, 90px);
+  }
+
+  .ctaBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumbInner h1 {
+    font-size: 42px;
+  }
+
+  .aboutHero,
+  .supportSection,
+  .missionSection,
+  .roadmapSection,
+  .faqSection,
+  .ctaSection {
+    padding: 78px 0;
+  }
+
+  .imageGrid {
+    min-height: auto;
+    display: grid;
+    gap: 16px;
+  }
+
+  .mainImage,
+  .secondaryImage {
+    position: static;
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+
+  .experienceBadge {
+    position: static;
+    max-width: 100%;
+  }
+
+  .heroContent h2,
+  .sectionHeader h2,
+  .missionBox h2,
+  .roadmapIntro h2,
+  .ctaBox h2 {
+    font-size: 31px;
+  }
+
+  .heroContent > p,
+  .sectionHeader > p,
+  .missionBox > p,
+  .roadmapIntro > p {
+    font-size: 15px;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .ctaButton {
+    width: 100%;
+  }
+
+  .roadmapList {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaBox {
+    padding: 32px 24px;
+  }
+
+  .faqItem summary {
+    padding: 22px;
+    font-size: 16px;
+  }
+
+  .faqItem p {
+    padding: 0 22px 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .breadcrumb {
+    padding: 120px 0 70px;
+  }
+
+  .breadcrumbInner h1 {
+    font-size: 36px;
+  }
+
+  .breadLinks {
+    font-size: 14px;
+  }
+
+  .backgroundText {
+    top: 24px;
+    font-size: 42px;
+    white-space: normal;
+    line-height: 1.05;
+  }
+
+  .heroContent h2,
+  .sectionHeader h2,
+  .missionBox h2,
+  .roadmapIntro h2,
+  .ctaBox h2 {
+    font-size: 27px;
+  }
+
+  .supportCard,
+  .valueCard,
+  .roadmapItem {
+    padding: 22px;
+  }
+}

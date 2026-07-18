@@ -1,9 +1,294 @@
-import Link from 'next/link';
+import Link from "next/link";
+import styles from "./AboutUsPage.module.css";
+
+export const metadata = {
+  title: "About HomeStartGuide | First-Time Buyer Support UK",
+  description:
+    "Learn about HomeStartGuide and how we help UK first-time buyers understand mortgages, property search, government schemes, offers, legal steps, and completion planning.",
+};
+
+const supportAreas = [
+  {
+    title: "First-Time Buyer Guidance",
+    text: "We help buyers understand the full journey before they start making important decisions.",
+    icon: "01",
+  },
+  {
+    title: "Mortgage Readiness Support",
+    text: "We guide buyers on what to prepare before speaking with qualified mortgage professionals.",
+    icon: "02",
+  },
+  {
+    title: "Property Search Direction",
+    text: "We help buyers compare locations, property suitability, budget, and practical next steps.",
+    icon: "03",
+  },
+  {
+    title: "Offer & Process Awareness",
+    text: "We explain the key stages from making an offer to surveys, legal checks, and completion.",
+    icon: "04",
+  },
+];
+
+const roadmap = [
+  "Understand your budget and affordability",
+  "Prepare your deposit and buying costs",
+  "Get mortgage-ready with the right documents",
+  "Learn about possible government schemes",
+  "Search for properties with clearer criteria",
+  "Make informed offers with less confusion",
+  "Understand survey and conveyancing steps",
+  "Prepare for exchange, completion, and moving in",
+];
+
+const values = [
+  {
+    title: "Clear Guidance",
+    text: "We explain the home-buying process in simple, practical language so first-time buyers know what to do next.",
+  },
+  {
+    title: "Buyer-Focused Support",
+    text: "Our guidance is designed around the questions, worries, and decisions first-time buyers commonly face.",
+  },
+  {
+    title: "Practical Direction",
+    text: "We do not just explain theory. We help buyers think through preparation, timing, documents, and next steps.",
+  },
+];
+
+const faqs = [
+  {
+    question: "Is HomeStartGuide an estate agent?",
+    answer:
+      "HomeStartGuide is a first-time buyer support and guidance platform. We help buyers understand the process and prepare better before taking important steps.",
+  },
+  {
+    question: "Do you provide regulated mortgage advice?",
+    answer:
+      "We provide general mortgage readiness guidance. Regulated mortgage or financial advice should be taken from qualified and authorised professionals where required.",
+  },
+  {
+    question: "Can you help before I start viewing properties?",
+    answer:
+      "Yes. In fact, preparing before viewing properties is one of the best ways to avoid confusion, wasted time, and emotional decisions.",
+  },
+];
 
 export default function Page() {
   return (
     <>
-      <div className="rts-breadcrumb-area breadcrumb-bg bg_image"><div className="container"><div className="row align-items-center"><div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1"><h1 className="title">About Us</h1></div><div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><div className="bread-tag"><span><Link href="/">Home</Link><span> / </span></span><span><span className="active">About Us</span></span></div></div></div></div></div><div className="rts-about-area rts-section-gap"><div className="container"><div className="row g-5 align-items-center"><div className="col-lg-6"><div className="about-image-v-inner"><div className="image-area"><img className="mt--110 img-1" src="/assets/images/about/main/about-03.jpg" alt="BUsiness_image" /><img className="img-over" src="/assets/images/about/main/about-04.jpg" alt="BUsiness_image" /><div className="goal-button-wrapper"><a className="vedio-icone" href="#"><span id="play-video" className="video-play-button"><span></span></span></a></div></div></div></div><div className="col-lg-6"><div className="about-progress-inner"><div className="title-area"><span>JUST A CONSULTANCY</span><h2 className="title">Get Consulting For Better Business Growth</h2></div><div className="inner"><p className="disc">Dapibus curae risus rutrum curabitur nunc sociis nullam nisl, aliquet quis iaculis scelerisque primis massa imperdiet, dis senectus blandit aptent nulla cubilia sodales convallis tortor pellentesque nulla.</p><div className="rts-progress-one-wrapper"><div className="single-progress"><div className="progress-top"><p className="progress-title">Business Strategy</p><span className="persectage">70%</span></div><div className="meter cadetblue"><span data-progress="70" style={{ width: "300px" }}></span></div></div><div className="single-progress"><div className="progress-top"><p className="progress-title">Company Strength</p><span className="persectage">93%</span></div><div className="meter"><span data-progress="93" style={{ width: "400px" }}></span></div></div></div><a className="rts-btn btn-primary" href="#">Make an Appointment</a></div></div></div></div></div></div><div className="rts-service-area rts-section-gapBottom"><div className="container-fluid service-main about-service-width-controler"><div className="background-service service-three row"><div className="row g-5"><div className="rts-title-area service-four text-center pt--40 pt_md--0 mt_sm--0 mt_md--0"><p className="pre-title">Our Services</p><h2 className="title">What We Provide</h2></div><div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30"><div className="service-one-inner-four"><div className="big-thumbnail-area"><a className="thumbnail" href="#"><img src="/assets/images/service/07.jpg" alt="Business-service" /></a><div className="content"><img src="/assets/images/service/icon/13.svg" alt="Business-icon" /><h5 className="title">Business Consultancy</h5><p className="disc">Aenean augue venenatis est porttitor fames aptent lobortis nam potenti</p></div><Link className="over_link" href="/service-details-2"></Link></div><Link className="rts-btn btn-primary" href="/service-details-2"> Read More<i className="fal fa-arrow-right"></i></Link></div></div><div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30"><div className="service-one-inner-four"><div className="big-thumbnail-area"><a className="thumbnail" href="#"><img src="/assets/images/service/08.jpg" alt="Business-service" /></a><div className="content"><img src="/assets/images/service/icon/14.svg" alt="Business-icon" /><h5 className="title">Business Appoinment</h5><p className="disc">Aenean augue venenatis est porttitor fames aptent lobortis nam potenti</p></div><Link className="over_link" href="/service-details-2"></Link></div><Link className="rts-btn btn-primary" href="/service-details-2"> Read More<i className="fal fa-arrow-right"></i></Link></div></div><div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80"><div className="service-one-inner-four"><div className="big-thumbnail-area"><a className="thumbnail" href="#"><img src="/assets/images/service/09.jpg" alt="Business-service" /></a><div className="content"><img src="/assets/images/service/icon/15.svg" alt="Business-icon" /><h5 className="title">Consultancy Foundation</h5><p className="disc">Aenean augue venenatis est porttitor fames aptent lobortis nam potenti</p></div><Link className="over_link" href="/service-details-2"></Link></div><Link className="rts-btn btn-primary" href="/service-details-2"> Read More<i className="fal fa-arrow-right"></i></Link></div></div></div></div><div className="row"><div className="cta-one-bg col-12"><div className="cta-one-inner"><div className="cta-left"><h3 className="title animated fadeIn">Let’s discuss about how we can help make your business better</h3></div><div className="cta-right"><a className="rts-btn btn-white" href="#">Lets Work Togather</a></div></div></div></div></div></div><div><div className="rts-team-area rts-section-gap team-two"><div className="container"><div className="row"><div className="col-12"><div className="rts-title-area team text-center"><p className="pre-title">Professionals Team</p><h2 className="title">Professionals Team</h2></div></div></div><div className="row g-5 mt--20 mt_md--30 mt_sm--0"><div className="swiper"><div className="swiper mySwiperh3_team pb--110 pl--20 pr--20"><div className="swiper-wrapper"><div className="swiper-slide"><div className="team-inner-two"><Link className="thumbnail" href="/team-details"><img src="/assets/images/team/tm/lg-01.jpg" alt="" /></Link><div className="acquaintance-area"><div className="header"><h5 className="title">Kevin Martin</h5><span>Consultant</span></div><div className="acquaintance-social"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-twitter"></i></a><a href="#"><i className="fab fa-instagram"></i></a></div></div></div></div><div className="swiper-slide"><div className="team-inner-two"><Link className="thumbnail" href="/team-details"><img src="/assets/images/team/tm/lg-02.jpg" alt="" /></Link><div className="acquaintance-area"><div className="header"><h5 className="title">Kevin Martin</h5><span>Consultant</span></div><div className="acquaintance-social"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-twitter"></i></a><a href="#"><i className="fab fa-instagram"></i></a></div></div></div></div><div className="swiper-slide"><div className="team-inner-two"><Link className="thumbnail" href="/team-details"><img src="/assets/images/team/tm/lg-03.jpg" alt="" /></Link><div className="acquaintance-area"><div className="header"><h5 className="title">Kevin Martin</h5><span>Consultant</span></div><div className="acquaintance-social"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-twitter"></i></a><a href="#"><i className="fab fa-instagram"></i></a></div></div></div></div><div className="swiper-slide"><div className="team-inner-two"><Link className="thumbnail" href="/team-details"><img src="/assets/images/team/tm/lg-01.jpg" alt="" /></Link><div className="acquaintance-area"><div className="header"><h5 className="title">Kevin Martin</h5><span>Consultant</span></div><div className="acquaintance-social"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-twitter"></i></a><a href="#"><i className="fab fa-instagram"></i></a></div></div></div></div><div className="swiper-slide"><div className="team-inner-two"><Link className="thumbnail" href="/team-details"><img src="/assets/images/team/tm/lg-02.jpg" alt="" /></Link><div className="acquaintance-area"><div className="header"><h5 className="title">Kevin Martin</h5><span>Consultant</span></div><div className="acquaintance-social"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-twitter"></i></a><a href="#"><i className="fab fa-instagram"></i></a></div></div></div></div><div className="swiper-slide"><div className="team-inner-two"><Link className="thumbnail" href="/team-details"><img src="/assets/images/team/tm/lg-03.jpg" alt="" /></Link><div className="acquaintance-area"><div className="header"><h5 className="title">Kevin Martin</h5><span>Consultant</span></div><div className="acquaintance-social"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-twitter"></i></a><a href="#"><i className="fab fa-instagram"></i></a></div></div></div></div></div></div></div></div></div></div></div><div className="rts-faq-section rts-section-gap rts-faq-bg bg_image"><div className="container"><div className="row align-items-center"><div className="col-lg-6"><div className="faq-two-inner"><div className="title-area-faq"><span className="sub">WHY CHOOSE US</span><h2 className="title">We Are Experienced<span className="sm-title">Business <span>Solution</span></span></h2></div><div className="faq-accordion-area"><div className="accordion" id="accordionExample"><div className="accordion-item"><h2 className="accordion-header" id="headingThree"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"></button></h2><div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample"><div className="accordion-body">Neque partrient nascetur facilisis suscipit ridiculus agna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service lifereu visionary sources unleash online businesss solutions</div></div></div></div><div className="accordion"><div className="accordion-item"><h2 className="accordion-header"><button type="button" aria-expanded="true" className="accordion-button"><span>01. </span> What should i included my personal details?</button></h2><div className="accordion-collapse collapse show"><div className="accordion-body">Neque partrient nascetur facilisis suscipit ridiculus agna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service lifereu visionary sources unleash online businesss solutions</div></div></div><div className="accordion-item"><h2 className="accordion-header"><button type="button" aria-expanded="false" className="accordion-button collapsed"><span>02. </span> Where i can find my business growth result?</button></h2><div className="accordion-collapse collapse"><div className="accordion-body">Neque partrient nascetur facilisis suscipit ridiculus agna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service lifereu visionary sources unleash online businesss solutions</div></div></div><div className="accordion-item"><h2 className="accordion-header"><button type="button" aria-expanded="false" className="accordion-button collapsed"><span>03. </span> Did you get any business consultant?</button></h2><div className="accordion-collapse collapse"><div className="accordion-body">Neque partrient nascetur facilisis suscipit ridiculus agna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service lifereu visionary sources unleash online businesss solutions</div></div></div></div></div></div></div><div className="col-lg-6"><div className="thumbnail-faq-four"><img src="/assets/images/faq/02.png" alt="" /></div></div></div></div></div><div className="rts-customer-feedback-area rts-section-gap bg-customer-feedback"><div className="container"><div className="row"><div className="rts-title-area feedback team text-center"><p className="pre-title">Feedbacks</p><h2 className="title">Customer Feedbacks</h2></div></div><div className="row g-5 mt--20"><div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><div className="testimopnial-wrapper-two"><div className="test-header"><div className="thumbnail"><img src="/assets/images/testimonials/02.png" alt="" /></div><div className="name-desig"><h5 className="title">David Smith</h5><span className="designation">Business Expert</span></div></div><div className="test-body"><p className="disc">“Parallel task user friendly convergence through supply are chains type siflify reliable meta provide service visionary sources unleash tactical thinking via granular intellectual capital architect dynamic information value online business solution services”</p></div></div></div><div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><div className="testimopnial-wrapper-two"><div className="test-header"><div className="thumbnail"><img src="/assets/images/testimonials/03.png" alt="" /></div><div className="name-desig"><h5 className="title">David Smith</h5><span className="designation">Business Expert</span></div></div><div className="test-body"><p className="disc">“Parallel task user friendly convergence through supply are chains type siflify reliable meta provide service visionary sources unleash tactical thinking via granular intellectual capital architect dynamic information value online business solution services”</p></div></div></div></div></div></div><div></div>
+      <section className={styles.breadcrumb}>
+        <div className="container">
+          <div className={styles.breadcrumbInner}>
+            <div>
+              <p>HomeStartGuide</p>
+              <h1>About Us</h1>
+            </div>
+
+            <div className={styles.breadLinks}>
+              <Link href="/">Home</Link>
+              <span>/</span>
+              <span>About Us</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.aboutHero}>
+        <div className="container">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6">
+              <div className={styles.imageGrid}>
+                <img
+                  className={styles.mainImage}
+                  src="/assets/images/about/main/about-03.jpg"
+                  alt="First-time buyer guidance in the UK"
+                />
+
+                <img
+                  className={styles.secondaryImage}
+                  src="/assets/images/about/main/about-04.jpg"
+                  alt="Home buying consultation support"
+                />
+
+                <div className={styles.experienceBadge}>
+                  <strong>Step-by-Step</strong>
+                  <span>First-Time Buyer Support</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className={styles.heroContent}>
+                <p className={styles.preTitle}>About HomeStartGuide</p>
+
+                <h2>Helping First-Time Buyers Move With More Confidence</h2>
+
+                <p>
+                  HomeStartGuide exists to make the UK home-buying journey
+                  easier to understand for first-time buyers. Buying a first
+                  home can feel overwhelming because there are many moving
+                  parts: budget, deposit, mortgage preparation, property search,
+                  offers, surveys, legal steps, and completion.
+                </p>
+
+                <p>
+                  We help buyers understand what to prepare, what questions to
+                  ask, and what steps usually come next. Our goal is to give
+                  practical direction so buyers feel less confused and more
+                  prepared before making important decisions.
+                </p>
+
+                <div className={styles.heroButtons}>
+                  <Link href="/contactus" className={styles.primaryButton}>
+                    Book a Consultation
+                  </Link>
+
+                  <Link
+                    href="/#buyer-roadmap"
+                    className={styles.secondaryButton}
+                  >
+                    View Buyer Roadmap
+                  </Link>
+                </div>
+
+                <div className={styles.notice}>
+                  HomeStartGuide provides general education and practical
+                  guidance. Regulated mortgage, financial, or legal advice
+                  should be taken from qualified professionals where required.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.supportSection}>
+        <span className={styles.backgroundText}>What We Do</span>
+
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <p className={styles.preTitle}>What We Help With</p>
+            <h2>
+              Practical Support For The Key Stages Of Buying Your First Home
+            </h2>
+            <p>
+              We focus on the areas where first-time buyers usually need the
+              most clarity before moving forward.
+            </p>
+          </div>
+
+          <div className="row g-4">
+            {supportAreas.map((item) => (
+              <div className="col-lg-3 col-md-6 col-12" key={item.title}>
+                <div className={styles.supportCard}>
+                  <span>{item.icon}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.missionSection}>
+        <div className="container">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-5">
+              <div className={styles.missionBox}>
+                <p className={styles.preTitle}>Our Mission</p>
+                <h2>Making The First Home Journey Easier To Understand</h2>
+                <p>
+                  Our mission is to help first-time buyers approach the process
+                  with better preparation, better questions, and better
+                  awareness of the steps ahead.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-7">
+              <div className={styles.valuesGrid}>
+                {values.map((item) => (
+                  <div className={styles.valueCard} key={item.title}>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.roadmapSection}>
+        <div className="container">
+          <div className="row align-items-start g-5">
+            <div className="col-lg-5">
+              <div className={styles.roadmapIntro}>
+                <p className={styles.preTitle}>Our Guidance Approach</p>
+                <h2>A Clear Roadmap From Preparation To Completion</h2>
+                <p>
+                  We help buyers look at the journey step by step, instead of
+                  feeling overwhelmed by the full process at once.
+                </p>
+
+                <Link href="/contactus" className={styles.primaryButton}>
+                  Start Your Buyer Journey
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-lg-7">
+              <div className={styles.roadmapList}>
+                {roadmap.map((step, index) => (
+                  <div className={styles.roadmapItem} key={step}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <p>{step}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.faqSection}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <p className={styles.preTitle}>Quick Answers</p>
+            <h2>Important Things To Know About HomeStartGuide</h2>
+          </div>
+
+          <div className={styles.faqList}>
+            {faqs.map((faq) => (
+              <details className={styles.faqItem} key={faq.question}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.ctaSection}>
+        <div className="container">
+          <div className={styles.ctaBox}>
+            <div>
+              <p>Ready To Get Started?</p>
+              <h2>Buy Your First Home With Better Clarity</h2>
+              <span>
+                Speak with HomeStartGuide and understand your next practical
+                step as a first-time buyer.
+              </span>
+            </div>
+
+            <Link href="/contactus" className={styles.ctaButton}>
+              Book a Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
