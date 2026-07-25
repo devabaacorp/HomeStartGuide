@@ -139,8 +139,9 @@ export default function Page() {
                   <p className={styles.preTitle}>Send Your Enquiry</p>
                   <h2>How Can We Help?</h2>
                   <p>
-                    This form opens your email app for now. A direct website
-                    form handler can be connected later.
+                    Complete the enquiry form and our team will review your
+                    request for buyer support, property viewing assistance, or a
+                    free 15-minute strategy call.
                   </p>
                 </div>
 
