@@ -1,0 +1,273 @@
+.roiSection {
+  --hsg-red: #d62828;
+  --hsg-red-dark: #b91c1c;
+  --hsg-navy: #0f2f4a;
+  --hsg-text: #243447;
+  --hsg-muted: #6b7280;
+  --hsg-white: #ffffff;
+  --hsg-soft: #fff8f8;
+  --hsg-border: rgba(15, 47, 74, 0.12);
+
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(214, 40, 40, 0.12),
+      transparent 34%
+    ),
+    linear-gradient(180deg, #ffffff 0%, #fff8f8 100%);
+}
+
+.backgroundText {
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(15, 47, 74, 0.08);
+  font-size: clamp(56px, 10vw, 150px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.roiBox {
+  position: relative;
+  z-index: 1;
+  padding: 54px;
+  border: 1px solid var(--hsg-border);
+  border-radius: 34px;
+  background: var(--hsg-white);
+  box-shadow: 0 24px 70px rgba(15, 47, 74, 0.1);
+}
+
+.header {
+  max-width: 880px;
+  margin: 0 auto 46px;
+  text-align: center;
+}
+
+.header p {
+  margin: 0 0 12px;
+  color: var(--hsg-red);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  margin: 0;
+  color: var(--hsg-navy);
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.header span {
+  display: block;
+  margin-top: 18px;
+  color: var(--hsg-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.pointsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pointCard {
+  padding: 26px;
+  border: 1px solid var(--hsg-border);
+  border-radius: 24px;
+  background: var(--hsg-soft);
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: 0.25s ease;
+}
+
+.pointCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(214, 40, 40, 0.3);
+  box-shadow: 0 18px 45px rgba(15, 47, 74, 0.08);
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  background: var(--hsg-red);
+  color: var(--hsg-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.pointCard h3 {
+  margin: 0 0 10px;
+  color: var(--hsg-navy);
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.pointCard p {
+  margin: 0;
+  color: var(--hsg-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.ctaStrip {
+  margin-top: 34px;
+  padding: 34px;
+  border-radius: 28px;
+  background: var(--hsg-navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.ctaStrip h3 {
+  margin: 0;
+  color: var(--hsg-white);
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+.ctaStrip p {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.ctaButton {
+  min-height: 56px;
+  padding: 0 30px;
+  border-radius: 999px;
+  background: var(--hsg-red);
+  color: var(--hsg-white) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.ctaButton:hover,
+.ctaButton:focus,
+.ctaButton:active {
+  background: var(--hsg-red-dark);
+  color: var(--hsg-white) !important;
+  text-decoration: none !important;
+}
+
+.disclaimer {
+  margin: 24px 0 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--hsg-red);
+  border-radius: 12px;
+  background: rgba(214, 40, 40, 0.08);
+  color: var(--hsg-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 991px) {
+  .roiSection {
+    padding: 90px 0;
+  }
+
+  .roiBox {
+    padding: 40px;
+  }
+
+  .header h2 {
+    font-size: 38px;
+  }
+
+  .pointsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaStrip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .roiSection {
+    padding: 78px 0;
+  }
+
+  .roiBox {
+    padding: 30px 22px;
+    border-radius: 26px;
+  }
+
+  .backgroundText {
+    top: 24px;
+    font-size: 46px;
+  }
+
+  .header h2 {
+    font-size: 31px;
+  }
+
+  .header span {
+    font-size: 15px;
+  }
+
+  .pointCard {
+    padding: 22px;
+    flex-direction: column;
+  }
+
+  .ctaStrip {
+    padding: 28px 22px;
+  }
+
+  .ctaStrip h3 {
+    font-size: 25px;
+  }
+
+  .ctaButton {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h2 {
+    font-size: 27px;
+  }
+
+  .pointCard h3 {
+    font-size: 19px;
+  }
+
+  .ctaStrip h3 {
+    font-size: 23px;
+  }
+}

@@ -1,6 +1,7 @@
 import HeroSection from "./components/home/HeroSection";
 import AboutSection from "./components/home/AboutSection";
 import ServicesSection from "./components/home/ServicesSection";
+import ROIBreakdownSection from "./components/home/ROIBreakdownSection";
 import BusinessGoalSection from "./components/home/BusinessGoalSection";
 import CounterSection from "./components/home/CounterSection";
 import GallerySection from "./components/home/GallerySection";
@@ -20,6 +21,7 @@ export default function Page() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <ROIBreakdownSection />
       <MortgageCalculatorCTASection />
       <BusinessGoalSection />
       <CounterSection />
