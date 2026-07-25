@@ -401,3 +401,27 @@
     padding: 8px 10px;
   }
 }
+/* Keep footer CTA buttons readable on hover/click/focus */
+.ctaButton,
+.ctaButton:visited,
+.ctaButton:hover,
+.ctaButton:focus,
+.ctaButton:active,
+.contactButton,
+.contactButton:visited,
+.contactButton:hover,
+.contactButton:focus,
+.contactButton:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.ctaButton:hover,
+.ctaButton:focus,
+.ctaButton:active,
+.contactButton:hover,
+.contactButton:focus,
+.contactButton:active {
+  background: #b91c1c;
+  color: #ffffff !important;
+}
