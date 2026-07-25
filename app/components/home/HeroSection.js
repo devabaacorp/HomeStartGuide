@@ -14,18 +14,19 @@ export default function HeroSection() {
                   className={`banner-one-inner text-start ${styles.heroContent}`}
                 >
                   <p className="pre-title">
-                    <span>Welcome!</span> First-Time Buyer Support in the UK
+                    <span>Buyer Protection.</span> Viewing Companion Support
                   </p>
 
                   <h1 className="title">
-                    Buy Your First Home <br />
-                    <span>With Confidence</span>
+                    Never Go to a Property <br />
+                    <span>Viewing Alone Again.</span>
                   </h1>
 
                   <p className={`disc banner-para ${styles.heroDescription}`}>
-                    We simplify every step of your home-buying journey — from
-                    understanding mortgages and government schemes to finding
-                    the right property and completing your purchase.
+                    We attend property viewings with you, spot hidden structural
+                    red flags, protect you from high-pressure estate agent
+                    tactics, and negotiate the fair price—for a flat £500
+                    one-off fee.
                   </p>
 
                   <div className={styles.heroButtons}>
@@ -33,23 +34,20 @@ export default function HeroSection() {
                       href="/contactus"
                       className="rts-btn btn-primary color-h-black"
                     >
-                      Book a Consultation
+                      Book Your Viewing Companion (£500)
                     </Link>
 
-                    <Link
-                      href="/#buyer-roadmap"
-                      className={styles.secondaryBtn}
-                    >
-                      View Buyer Roadmap
+                    <Link href="/contactus" className={styles.secondaryBtn}>
+                      Claim Your Free 15-Min Strategy Call
                     </Link>
                   </div>
 
                   <ul className={styles.heroChecklist}>
-                    <li>First-Time Buyer Guidance</li>
-                    <li>Mortgage Support & Advice</li>
-                    <li>Property Search Assistance</li>
-                    <li>Government Scheme Guidance</li>
-                    <li>Step-by-Step Buying Roadmap</li>
+                    <li>In-Person Property Viewing Support</li>
+                    <li>Estate Agent Pressure Protection</li>
+                    <li>Negotiation Support Before You Offer</li>
+                    <li>Auction Buyer Guidance</li>
+                    <li>Flat £500 One-Off Viewing Companion Package</li>
                   </ul>
 
                   <img
@@ -66,18 +64,19 @@ export default function HeroSection() {
                   className={`banner-one-inner text-start ${styles.heroContent}`}
                 >
                   <p className="pre-title">
-                    <span>Plan Smart.</span> Move Forward With Clarity
+                    <span>Ex-Agent Insight.</span> Avoid Overpaying
                   </p>
 
                   <h1 className="title">
-                    Understand Mortgages <br />
-                    <span>Before You Apply</span>
+                    Get Protected From <br />
+                    <span>Costly Buyer Mistakes</span>
                   </h1>
 
                   <p className={`disc banner-para ${styles.heroDescription}`}>
-                    Get practical guidance on affordability, deposits, mortgage
-                    readiness, credit preparation, and the key steps before
-                    making an offer.
+                    With 2+ years of estate agency and auction house experience,
+                    we help first-time buyers and auction buyers understand
+                    property risks, agent tactics, pricing pressure, and offer
+                    strategy before they commit.
                   </p>
 
                   <div className={styles.heroButtons}>
@@ -85,22 +84,19 @@ export default function HeroSection() {
                       href="/contactus"
                       className="rts-btn btn-primary color-h-black"
                     >
-                      Get Started Today
+                      Get Expert Negotiation Support
                     </Link>
 
-                    <Link
-                      href="/#mortgage-guidance"
-                      className={styles.secondaryBtn}
-                    >
-                      Mortgage Guidance
+                    <Link href="/#services" className={styles.secondaryBtn}>
+                      Explore Buyer Support
                     </Link>
                   </div>
 
                   <ul className={styles.heroChecklist}>
-                    <li>Affordability Planning</li>
-                    <li>Deposit Preparation</li>
-                    <li>Mortgage Readiness Review</li>
-                    <li>Agreement in Principle Guidance</li>
+                    <li>Ex-Estate Agent Negotiation Support</li>
+                    <li>Property Red Flag Awareness</li>
+                    <li>Fair Price Guidance</li>
+                    <li>First-Time Buyer Confidence</li>
                   </ul>
 
                   <img
@@ -117,18 +113,19 @@ export default function HeroSection() {
                   className={`banner-one-inner text-start ${styles.heroContent}`}
                 >
                   <p className="pre-title">
-                    <span>Search Better.</span> Avoid Costly Mistakes
+                    <span>Auction Ready.</span> Bid With More Control
                   </p>
 
                   <h1 className="title">
-                    Find The Right Home <br />
-                    <span>With Better Guidance</span>
+                    Don’t Risk Auction <br />
+                    <span>Deposit Traps</span>
                   </h1>
 
                   <p className={`disc banner-para ${styles.heroDescription}`}>
-                    We help you evaluate property value, location, transport
-                    links, surveys, hidden risks, and the buying process before
-                    you commit.
+                    We guide auction buyers through key auction risks, legal
+                    pack awareness, bidding pressure, non-refundable deposit
+                    concerns, and AML preparation before they make a serious
+                    commitment.
                   </p>
 
                   <div className={styles.heroButtons}>
@@ -136,19 +133,22 @@ export default function HeroSection() {
                       href="/contactus"
                       className="rts-btn btn-primary color-h-black"
                     >
-                      Speak To A Consultant
+                      Book Auction Buyer Support
                     </Link>
 
-                    <Link href="/our-service" className={styles.secondaryBtn}>
-                      Explore Services
+                    <Link
+                      href="/#buyer-roadmap"
+                      className={styles.secondaryBtn}
+                    >
+                      View Buyer Roadmap
                     </Link>
                   </div>
 
                   <ul className={styles.heroChecklist}>
-                    <li>Property Search Support</li>
-                    <li>Offer & Negotiation Guidance</li>
-                    <li>Survey & Legal Process Guidance</li>
-                    <li>Completion Preparation</li>
+                    <li>Auction House Experience</li>
+                    <li>Legal Pack Awareness</li>
+                    <li>AML Preparation Support</li>
+                    <li>Deposit Risk Awareness</li>
                   </ul>
 
                   <img
