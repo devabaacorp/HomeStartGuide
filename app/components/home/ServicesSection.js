@@ -5,61 +5,66 @@ const services = [
   {
     icon: "/assets/images/service/icon/01.svg",
     className: "one",
-    title: "First-Time Buyer Consultation",
+    title: "In-Person Viewing & Structural Eye",
     description:
-      "Get clear guidance on where to start, how the UK buying process works, what steps to prepare for, and how to move forward with confidence.",
+      "We attend property viewings with you and help spot visible red flags, damp concerns, maintenance issues, layout problems, and hidden cost indicators before you spend money on surveys or legal work.",
   },
   {
     icon: "/assets/images/service/icon/02.svg",
     className: "two",
-    title: "Mortgage Guidance",
+    title: "Ex-Estate Agent Negotiation",
     description:
-      "Understand affordability, deposit planning, Agreement in Principle, required documents, and the right questions to ask mortgage professionals.",
+      "With insider estate agency experience, we understand how buyers can be pressured into higher offers. We help you assess the situation and support negotiation so you do not overpay unnecessarily.",
   },
   {
     icon: "/assets/images/service/icon/03.svg",
     className: "three",
-    title: "Government Scheme Assistance",
+    title: "AML Pre-Screening Preparation",
     description:
-      "We help you understand available first-time buyer schemes, eligibility basics, and how these options may support your home-buying journey.",
+      "We help you prepare and organise proof of funds, deposit trails, and basic AML-related documents before solicitors ask, reducing confusion, delay, or avoidable transaction concerns.",
   },
   {
     icon: "/assets/images/service/icon/04.svg",
     className: "four",
-    title: "Property Search Support",
+    title: "Auction House Expertise",
     description:
-      "Get practical support when comparing locations, property types, transport links, local value, viewing questions, and hidden risks.",
+      "We guide auction buyers through key auction risks, legal pack awareness, bidding pressure, non-refundable deposit concerns, and practical preparation before making a serious commitment.",
   },
   {
     icon: "/assets/images/service/icon/05.svg",
     className: "five",
-    title: "Offer & Negotiation Guidance",
+    title: "£500 Viewing Companion Package",
     description:
-      "Learn how to make a sensible offer, understand market value, avoid emotional decisions, and prepare for the negotiation stage.",
+      "Get hands-on property viewing support, buyer protection, practical red flag awareness, and negotiation preparation for a flat £500 one-off fee before making an important property decision.",
   },
   {
     icon: "/assets/images/service/icon/06.svg",
     className: "six",
-    title: "Conveyancing & Legal Process Guidance",
+    title: "First-Time Buyer Protection",
     description:
-      "Understand the key legal steps, surveys, searches, solicitor communication, contracts, exchange, completion, and moving preparation.",
+      "We support inexperienced buyers with practical guidance, property-viewing confidence, fair price thinking, and next-step preparation so they can move forward with more control.",
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section className={styles.servicesSection} id="service">
+    <section className={styles.servicesSection} id="services">
       <div className="rts-service-area rts-section-gapBottom">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="rts-title-area service text-center">
-                <p className="pre-title">Our Services</p>
-                <h2 className="title">How HomeStartGuide Helps You</h2>
+                <p className="pre-title">Buyer Protection Services</p>
+
+                <h2 className="title">
+                  Why First-Time & Auction Buyers Need Us
+                </h2>
+
                 <p className={styles.sectionIntro}>
-                  Practical, step-by-step support for UK first-time buyers —
-                  from early planning to property search, offer, legal process,
-                  and completion.
+                  Buying without the right support can lead to overpaying,
+                  missing property red flags, misunderstanding auction risks, or
+                  getting delayed by avoidable document issues. HomeStartGuide
+                  gives you practical, hands-on buyer support before you commit.
                 </p>
               </div>
             </div>
@@ -103,14 +108,13 @@ export default function ServicesSection() {
               <div className="cta-one-inner">
                 <div className="cta-left">
                   <h3 className="title">
-                    Ready to start your first home-buying journey with better
-                    clarity?
+                    Don&apos;t let estate agents push you into overpaying.
                   </h3>
                 </div>
 
                 <div className="cta-right">
                   <Link className="rts-btn btn-white" href="/contactus">
-                    Book a Consultation
+                    Get Expert Negotiation Support
                   </Link>
                 </div>
               </div>
@@ -118,9 +122,11 @@ export default function ServicesSection() {
           </div>
 
           <p className={styles.serviceDisclaimer}>
-            HomeStartGuide provides general education and practical guidance.
-            Regulated mortgage, financial, or legal advice should be taken from
-            qualified professionals where required.
+            HomeStartGuide provides non-regulated buyer representation, property
+            viewing assistance, negotiation support, and AML pre-screening
+            preparation. Regulated mortgage advice, formal building surveys, and
+            legal conveyancing are provided by qualified third-party
+            specialists.
           </p>
         </div>
       </div>
