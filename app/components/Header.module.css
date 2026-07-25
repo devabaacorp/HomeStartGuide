@@ -492,3 +492,70 @@
     font-size: 13px;
   }
 }
+/* Sticky promotional buyer-protection banner */
+.promoBar {
+  background: linear-gradient(90deg, #991b1b 0%, #d62828 55%, #b91c1c 100%);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.promoInner {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.promoInner p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+.promoButton {
+  min-height: 30px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #b91c1c !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none !important;
+  transition: 0.2s ease;
+}
+
+.promoButton:hover,
+.promoButton:focus,
+.promoButton:active {
+  background: #0f2f4a;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .promoInner {
+    min-height: auto;
+    padding: 9px 0;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .promoInner p {
+    font-size: 13px;
+  }
+
+  .promoButton {
+    min-height: 28px;
+    padding: 0 14px;
+    font-size: 12px;
+  }
+}

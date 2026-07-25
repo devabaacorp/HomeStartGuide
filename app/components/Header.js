@@ -6,27 +6,27 @@ import styles from "./Header.module.css";
 
 const services = [
   {
-    label: "First-Time Buyer Consultation",
+    label: "Viewing Companion Package",
+    href: "/contactus",
+  },
+  {
+    label: "Property Viewing Support",
     href: "/#services",
   },
   {
-    label: "Mortgage Guidance",
-    href: "/#mortgage-guidance",
-  },
-  {
-    label: "Government Scheme Guidance",
+    label: "Negotiation Support",
     href: "/#services",
   },
   {
-    label: "Property Search Support",
+    label: "Auction Buyer Guidance",
     href: "/#services",
   },
   {
-    label: "Offer & Negotiation Guidance",
+    label: "AML Preparation Support",
     href: "/#services",
   },
   {
-    label: "Conveyancing Guidance",
+    label: "First-Time Buyer Protection",
     href: "/#services",
   },
 ];
@@ -69,6 +69,21 @@ export default function Header() {
   return (
     <>
       <header className={`${styles.header} header--sticky`}>
+        <div className={styles.promoBar}>
+          <div className={styles.container}>
+            <div className={styles.promoInner}>
+              <p>
+                Inexperienced Buyer or Auction Bidder? Get Ex-Agent Protection
+                Today.
+              </p>
+
+              <Link href="/contactus" className={styles.promoButton}>
+                Book Now
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.topBar}>
           <div className={styles.container}>
             <div className={styles.topBarInner}>
@@ -88,7 +103,7 @@ export default function Header() {
 
               <div className={styles.topRight}>
                 <Link href="/contactus" className={styles.topLink}>
-                  Book a Consultation
+                  Book Viewing Support
                 </Link>
               </div>
             </div>
@@ -149,7 +164,7 @@ export default function Header() {
 
               <div className={styles.actions}>
                 <Link href="/contactus" className={styles.cta}>
-                  Book Consultation
+                  Book Now
                 </Link>
 
                 <button
@@ -249,7 +264,7 @@ export default function Header() {
           className={styles.drawerCta}
           onClick={closeMenu}
         >
-          Book Consultation
+          Book Your Viewing Companion (£500)
         </Link>
       </aside>
     </>
