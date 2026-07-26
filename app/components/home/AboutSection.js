@@ -12,59 +12,64 @@ export default function AboutSection() {
                 <p className="pre-title">Why Choose HomeStartGuide?</p>
 
                 <h2 className="title">
-                  Clear Guidance For UK First-Time Home Buyers
+                  Hands-On Buyer Protection Before You Commit
                 </h2>
               </div>
 
               <div className="about-inner">
                 <p className="disc">
-                  Buying your first home can feel confusing, stressful, and full
-                  of unknown steps. HomeStartGuide helps first-time buyers
-                  understand the full journey clearly — from mortgage
-                  preparation and government schemes to property search, offers,
-                  legal steps, and completion.
+                  HomeStartGuide helps first-time buyers and auction buyers make
+                  safer, better-informed property decisions. Instead of going to
+                  viewings alone, you can have practical support from someone
+                  with 2+ years of estate agency and auction house experience —
+                  helping you spot visible red flags, understand agent pressure,
+                  prepare your documents, and negotiate with more confidence.
                 </p>
 
                 <div className="row about-success-wrapper">
                   <div className="col-lg-6 col-md-6">
                     <div className="single">
                       <i className="far fa-check"></i>
-                      <p className="details">First-Time Buyer Guidance</p>
+                      <p className="details">In-Person Viewing Support</p>
                     </div>
 
                     <div className="single">
                       <i className="far fa-check"></i>
-                      <p className="details">Mortgage Readiness Support</p>
+                      <p className="details">
+                        Visible Property Red Flag Checks
+                      </p>
                     </div>
 
                     <div className="single">
                       <i className="far fa-check"></i>
-                      <p className="details">Government Scheme Guidance</p>
+                      <p className="details">Ex-Estate Agent Insight</p>
                     </div>
                   </div>
 
                   <div className="col-lg-6 col-md-6">
                     <div className="single">
                       <i className="far fa-check"></i>
-                      <p className="details">Property Search Assistance</p>
+                      <p className="details">Negotiation Support</p>
                     </div>
 
                     <div className="single">
                       <i className="far fa-check"></i>
-                      <p className="details">Offer & Negotiation Support</p>
+                      <p className="details">Auction Buyer Guidance</p>
                     </div>
 
                     <div className="single">
                       <i className="far fa-check"></i>
-                      <p className="details">Step-by-Step Buying Roadmap</p>
+                      <p className="details">AML Preparation Support</p>
                     </div>
                   </div>
                 </div>
 
                 <p className={styles.disclaimer}>
-                  We provide general home-buying education and practical
-                  guidance. Regulated mortgage, financial, or legal advice
-                  should be taken from qualified professionals where required.
+                  HomeStartGuide provides non-regulated buyer representation,
+                  property viewing assistance, negotiation support, and AML
+                  pre-screening preparation. Regulated mortgage advice, formal
+                  building surveys, and legal conveyancing are provided by
+                  qualified third-party specialists.
                 </p>
 
                 <div className="row about-founder-wrapper align-items-center mt--40">
@@ -73,7 +78,7 @@ export default function AboutSection() {
                       <Link className="thumbnail" href="/about-us">
                         <img
                           src="/assets/images/about/sm-01.png"
-                          alt="HomeStartGuide consultant"
+                          alt="HomeStartGuide buyer advocate"
                         />
                       </Link>
 
@@ -81,7 +86,7 @@ export default function AboutSection() {
                         <Link href="/about-us">
                           <h6 className="title">HomeStartGuide Team</h6>
                         </Link>
-                        <span>First-Time Buyer Support</span>
+                        <span>Buyer Advocate Support</span>
                       </div>
                     </div>
                   </div>
@@ -106,7 +111,7 @@ export default function AboutSection() {
 
                 <div className={styles.aboutButtonWrapper}>
                   <Link href="/contactus" className={styles.aboutButton}>
-                    Book a Consultation
+                    Book Your Viewing Companion (£500)
                   </Link>
                 </div>
               </div>
@@ -116,24 +121,25 @@ export default function AboutSection() {
               <div className="about-one-thumbnail">
                 <img
                   src="/assets/images/about/main/about-01.png"
-                  alt="UK first-time home buyer guidance"
+                  alt="UK property viewing support"
                 />
 
                 <img
                   className="small-img"
                   src="/assets/images/about/main/about-02.png"
-                  alt="UK home buying support"
+                  alt="UK buyer advocate support"
                 />
 
                 <div className="experience">
                   <div className="left single">
-                    <h2 className="title">8</h2>
-                    <p className="time">Steps</p>
+                    <h2 className="title">£500</h2>
+                    <p className="time">Flat Fee</p>
                   </div>
 
                   <div className="right single">
                     <p className="disc">
-                      Simple roadmap from preparation to completion
+                      Viewing companion package to help protect your property
+                      decision
                     </p>
                   </div>
                 </div>
