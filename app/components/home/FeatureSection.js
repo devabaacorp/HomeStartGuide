@@ -2,18 +2,18 @@ import Link from "next/link";
 import styles from "./FeatureSection.module.css";
 
 const mistakes = [
-  "Searching for homes before checking affordability",
-  "Not preparing deposit and extra buying costs early",
-  "Ignoring credit score and mortgage readiness",
-  "Not comparing locations, transport links, and future value",
-  "Making emotional offers without proper research",
-  "Not understanding survey, solicitor, and legal steps",
+  "Going to property viewings alone without an experienced second opinion",
+  "Trusting estate agent pressure and rushing into inflated offers",
+  "Overpaying because of emotional bidding or fear of missing out",
+  "Missing visible red flags such as damp, poor maintenance, or hidden cost indicators",
+  "Bidding at auction without understanding legal pack and deposit risks",
+  "Not preparing proof of funds and AML documents before solicitor checks",
 ];
 
 export default function FeatureSection() {
   return (
     <section className={styles.featureSection} id="buyer-mistakes">
-      <span className={styles.backgroundText}>Buyer Mistakes</span>
+      <span className={styles.backgroundText}>Buyer Risks</span>
 
       <div className="container">
         <div className="row g-5 align-items-center">
@@ -21,30 +21,30 @@ export default function FeatureSection() {
             <div className={styles.imageCard}>
               <img
                 src="/assets/images/feature/01.png"
-                alt="Common first-time buyer mistakes"
+                alt="Property buyer risks and viewing mistakes"
               />
 
               <div className={styles.imageBadge}>
                 <span>Avoid</span>
-                <p>Costly mistakes before buying your first home</p>
+                <p>Costly property mistakes before you view, offer, or bid</p>
               </div>
             </div>
           </div>
 
           <div className="col-xl-6 col-lg-12">
             <div className={styles.contentBox}>
-              <p className={styles.preTitle}>Common Buyer Mistakes</p>
+              <p className={styles.preTitle}>Common Buyer Risks</p>
 
               <h2 className={styles.title}>
-                Avoid The Mistakes Many First-Time Buyers Make
+                Don&apos;t Let Inexperience Cost You Thousands
               </h2>
 
               <p className={styles.description}>
-                Buying your first home is exciting, but it can also be
-                confusing. Many buyers start searching too early, underestimate
-                costs, or move forward without understanding mortgage readiness,
-                legal steps, and property risks. HomeStartGuide helps you plan
-                with more clarity.
+                First-time buyers and auction buyers often make expensive
+                decisions under pressure. A property can look perfect online,
+                but the real risks can appear during the viewing, negotiation,
+                auction process, or solicitor checks. HomeStartGuide helps you
+                move forward with practical buyer protection before you commit.
               </p>
 
               <div className={styles.mistakeList}>
@@ -58,18 +58,20 @@ export default function FeatureSection() {
 
               <div className={styles.ctaRow}>
                 <Link href="/contactus" className={styles.primaryButton}>
-                  Get First-Time Buyer Guidance
+                  Book Viewing Companion (£500)
                 </Link>
 
-                <Link href="/#buyer-roadmap" className={styles.secondaryButton}>
-                  View Buyer Roadmap
+                <Link href="/contactus" className={styles.secondaryButton}>
+                  Free 15-Min Strategy Call
                 </Link>
               </div>
 
               <p className={styles.disclaimer}>
-                This section provides general education and practical guidance.
-                Mortgage, financial, and legal advice should be taken from
-                qualified professionals where required.
+                HomeStartGuide provides non-regulated buyer representation,
+                property viewing assistance, negotiation support, and AML
+                pre-screening preparation. Regulated mortgage advice, formal
+                building surveys, and legal conveyancing are provided by
+                qualified third-party specialists.
               </p>
             </div>
           </div>
