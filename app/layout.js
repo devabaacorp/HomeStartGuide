@@ -11,35 +11,40 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "HomeStartGuide | First-Time Buyer Guide UK",
+  title: "HomeStartGuide | Buyer Advocate & Viewing Companion UK",
   description:
-    "HomeStartGuide helps UK first-time buyers understand mortgages, property search, government schemes, and the home-buying process with clear step-by-step guidance.",
+    "HomeStartGuide supports UK buyers with property viewing assistance, ex-estate agent negotiation insight, auction buyer guidance, AML preparation support, and a £500 Viewing Companion Package.",
   keywords: [
-    "First time home buyer UK",
-    "First home buyer guide UK",
-    "Mortgage help for first time buyers",
-    "How to buy a house in the UK",
-    "First home consultation UK",
-    "Home buying advisor UK",
-    "First time buyer mortgage guide",
-    "Property buying consultant UK",
-    "Home ownership guide UK",
-    "Buy your first house UK",
+    "Buyer advocate UK",
+    "Property viewing companion UK",
+    "Viewing companion for home buyers",
+    "First time buyer support UK",
+    "Property viewing support UK",
+    "Estate agent negotiation support",
+    "Home buyer negotiation support UK",
+    "Auction buyer guidance UK",
+    "AML preparation support property buyers",
+    "Proof of funds preparation UK",
+    "Property buyer support London",
+    "HomeStartGuide",
+    "£500 viewing companion package",
+    "Buyer protection before property viewing",
+    "Avoid overpaying for property UK",
   ],
   authors: [{ name: "HomeStartGuide" }],
   openGraph: {
-    title: "HomeStartGuide | First-Time Buyer Guide UK",
+    title: "HomeStartGuide | Buyer Advocate & Viewing Companion UK",
     description:
-      "Clear, practical support for UK first-time buyers, including mortgage readiness, property search guidance, government schemes, and the complete home-buying process.",
+      "Practical buyer protection before you view, offer, bid, or commit. Get viewing support, ex-agent negotiation insight, auction guidance, AML preparation support, and the £500 Viewing Companion Package.",
     type: "website",
     locale: "en_GB",
     siteName: "HomeStartGuide",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HomeStartGuide | First-Time Buyer Guide UK",
+    title: "HomeStartGuide | Buyer Advocate & Viewing Companion UK",
     description:
-      "Clear, practical support for UK first-time buyers, including mortgage readiness, property search guidance, government schemes, and the complete home-buying process.",
+      "Practical buyer protection before you view, offer, bid, or commit. Get viewing support, negotiation insight, auction guidance, AML preparation support, and the £500 Viewing Companion Package.",
   },
   icons: {
     icon: "/assets/images/fav.png",
