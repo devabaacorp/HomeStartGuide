@@ -63,7 +63,7 @@
 }
 
 .introText {
-  max-width: 700px;
+  max-width: 720px;
   margin: 18px 0 32px;
   color: var(--hsg-muted);
   font-size: 16px;
@@ -178,7 +178,7 @@
   justify-content: center;
   font-size: 15px;
   font-weight: 900;
-  flex: 0 0 auto;
+  flex: 0 0 64px;
 }
 
 .imageBadge p {
@@ -229,6 +229,11 @@
     padding: 32px 24px 28px !important;
   }
 
+  .quoteIcon {
+    right: 20px;
+    font-size: 76px;
+  }
+
   .comment {
     font-size: 15px;
   }
@@ -251,6 +256,7 @@
   .imageBadge span {
     width: 54px;
     height: 54px;
+    flex-basis: 54px;
     font-size: 14px;
   }
 
@@ -273,6 +279,10 @@
 
   .title {
     font-size: 27px;
+  }
+
+  .testimonialCard {
+    padding: 30px 20px 26px !important;
   }
 
   .sampleNote {

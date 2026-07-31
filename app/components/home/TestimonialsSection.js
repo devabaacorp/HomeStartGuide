@@ -7,7 +7,7 @@ const testimonials = [
     label: "Sample Buyer Feedback",
     image: "/assets/images/testimonials/02.png",
     comment:
-      "HomeStartGuide helped us understand the first-time buying process more clearly, especially mortgage preparation, property search, and the key steps before making an offer.",
+      "HomeStartGuide helped us understand why attending a viewing alone can be risky. The support made us feel more prepared before viewing, offering, or committing.",
   },
   {
     name: "Rebecca",
@@ -15,7 +15,7 @@ const testimonials = [
     label: "Sample Buyer Feedback",
     image: "/assets/images/testimonials/02.png",
     comment:
-      "The step-by-step guidance made the process feel less confusing. I understood what to prepare before starting my property search and what questions to ask.",
+      "The viewing companion approach was exactly what I needed. I understood visible red flags, estate agent pressure, and how to think more clearly before making an offer.",
   },
   {
     name: "Daniel",
@@ -23,7 +23,7 @@ const testimonials = [
     label: "Sample Buyer Feedback",
     image: "/assets/images/testimonials/02.png",
     comment:
-      "The buyer roadmap helped me understand affordability, mortgage readiness, surveys, legal steps, and completion in a much clearer way.",
+      "The guidance around auction risks, deposit traps, negotiation, and proof of funds preparation helped me understand what to check before moving forward.",
   },
 ];
 
@@ -42,13 +42,15 @@ export default function TestimonialsSection() {
                 <p className={styles.preTitle}>Sample Buyer Feedback</p>
 
                 <h2 className={styles.title}>
-                  What First-Time Buyers Often Need Help With
+                  What Buyers Often Value Before A Property Decision
                 </h2>
 
                 <p className={styles.introText}>
-                  These sample feedback cards are based on common first-time
-                  buyer needs. They can be quickly replaced with real client
-                  testimonials once approved feedback is available.
+                  These sample feedback cards reflect common buyer concerns
+                  around property viewings, visible red flags, estate agent
+                  pressure, negotiation, auction risks, and AML preparation.
+                  They should be replaced with real approved testimonials once
+                  available.
                 </p>
 
                 <div className="swiper mySwipertestimonial">
@@ -89,7 +91,8 @@ export default function TestimonialsSection() {
 
                 <p className={styles.sampleNote}>
                   Note: Current feedback is sample content for layout purposes.
-                  Replace with real approved testimonials when available.
+                  Replace this section with real approved testimonials when
+                  client feedback is available.
                 </p>
               </div>
             </div>
@@ -98,12 +101,12 @@ export default function TestimonialsSection() {
               <div className={styles.imageCard}>
                 <img
                   src="/assets/images/testimonials/01.png"
-                  alt="First-time buyer support feedback"
+                  alt="Buyer advocate support feedback"
                 />
 
                 <div className={styles.imageBadge}>
                   <span>Trust</span>
-                  <p>Clear guidance for first-time home buyers</p>
+                  <p>Practical buyer support before you view, offer, or bid</p>
                 </div>
               </div>
             </div>
