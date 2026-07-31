@@ -5,28 +5,28 @@ const blogPosts = [
   {
     image: "/assets/images/blog/02.jpg",
     badge: "Guide 01",
-    category: "First-Time Buyer Guide",
-    title: "How To Prepare Before Buying Your First Home",
+    category: "Viewing Support",
+    title: "Why You Should Not Attend A Property Viewing Alone",
     description:
-      "Understand affordability, deposit planning, documents, credit readiness, and the first practical steps before starting your property search.",
+      "Learn why first-time buyers can miss visible red flags, feel pressured by estate agents, and make rushed decisions during property viewings.",
     href: "/#blog-section",
   },
   {
     image: "/assets/images/blog/03.jpg",
     badge: "Guide 02",
-    category: "Mortgage Readiness",
-    title: "Mortgage Readiness Checklist For First-Time Buyers",
+    category: "Negotiation Support",
+    title: "How Estate Agent Pressure Can Lead To Overpaying",
     description:
-      "Learn what to prepare before speaking with mortgage professionals, including income, expenses, deposit, credit history, and key documents.",
+      "Understand common pressure tactics, emotional bidding risks, inflated pricing, and how ex-agent insight can help you prepare a sensible offer.",
     href: "/#blog-section",
   },
   {
     image: "/assets/images/blog/04.jpg",
     badge: "Guide 03",
-    category: "Property Search Support",
-    title: "Common Mistakes To Avoid Before Making An Offer",
+    category: "Auction & AML Preparation",
+    title: "Auction Buyer Risks Before You Bid Or Pay A Deposit",
     description:
-      "Avoid emotional offers, hidden costs, weak location research, and unclear understanding of surveys, legal steps, and completion.",
+      "Understand guide price traps, legal pack concerns, non-refundable deposits, proof of funds preparation, and AML pre-screening readiness.",
     href: "/#blog-section",
   },
 ];
@@ -38,16 +38,16 @@ export default function BlogSection() {
 
       <div className="container">
         <div className={styles.sectionHeader}>
-          <p className={styles.preTitle}>Helpful Resources</p>
+          <p className={styles.preTitle}>Helpful Buyer Resources</p>
 
           <h2 className={styles.title}>
-            Practical Guides For UK First-Time Buyers
+            Practical Guides Before You View, Offer, Bid, Or Commit
           </h2>
 
           <p className={styles.introText}>
-            Learn the important steps before buying your first home — from
-            mortgage readiness and property search to making an offer and
-            understanding the legal process.
+            Learn how to protect yourself before a property decision — from
+            viewing red flags and estate agent pressure to negotiation, auction
+            risks, deposit traps, and AML preparation.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function BlogSection() {
                   <p className={styles.description}>{post.description}</p>
 
                   <Link className={styles.readMore} href={post.href}>
-                    Read Guide
+                    Read Buyer Guide
                     <i className="far fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -84,17 +84,24 @@ export default function BlogSection() {
 
         <div className={styles.ctaBox}>
           <div>
-            <h3>Need help understanding your next buying step?</h3>
+            <h3>Need support before your next viewing?</h3>
             <p>
-              Book a consultation and get practical direction for your first
-              home-buying journey.
+              Secure practical buyer protection for a flat £500 one-off fee and
+              get support before you view, offer, bid, or commit.
             </p>
           </div>
 
           <Link href="/contactus" className={styles.ctaButton}>
-            Book a Consultation
+            Book £500 Viewing Companion
           </Link>
         </div>
+
+        <p className={styles.disclaimer}>
+          HomeStartGuide provides non-regulated buyer representation, property
+          viewing assistance, negotiation support, and AML pre-screening
+          preparation. Formal building surveys, regulated mortgage advice, and
+          legal conveyancing are provided by qualified third-party specialists.
+        </p>
       </div>
     </section>
   );
