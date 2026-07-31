@@ -38,7 +38,7 @@
 }
 
 .sectionHeader {
-  max-width: 880px;
+  max-width: 920px;
   margin: 0 auto 54px;
   text-align: center;
 }
@@ -61,7 +61,7 @@
 }
 
 .introText {
-  max-width: 760px;
+  max-width: 790px;
   margin: 18px auto 0;
   color: var(--hsg-muted);
   font-size: 16px;
@@ -181,6 +181,7 @@
   color: var(--hsg-white);
   font-size: 26px;
   font-weight: 900;
+  line-height: 1.25;
 }
 
 .ctaBox p {
@@ -193,23 +194,30 @@
 
 .ctaButton {
   min-height: 54px;
-  padding: 0 28px;
+  padding: 0 26px;
   border-radius: 999px;
   background: var(--hsg-red);
   color: var(--hsg-white);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  flex: 0 0 auto;
+  font-size: 14px;
   font-weight: 900;
+  line-height: 1;
+  text-align: center;
   text-decoration: none;
   white-space: nowrap;
   transition: 0.2s ease;
 }
 
-.ctaButton:hover {
+.ctaButton:visited,
+.ctaButton:hover,
+.ctaButton:focus,
+.ctaButton:active {
   background: var(--hsg-red-dark);
-  color: var(--hsg-white);
+  color: var(--hsg-white) !important;
+  text-decoration: none;
 }
 
 /* Responsive */
@@ -241,6 +249,10 @@
   .ctaBox {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .ctaButton {
+    width: auto;
   }
 }
 
@@ -279,6 +291,8 @@
 
   .ctaButton {
     width: 100%;
+    white-space: normal;
+    padding: 0 18px;
   }
 }
 
@@ -300,5 +314,17 @@
 
   .imageWrapper {
     height: 210px;
+  }
+
+  .cardContent {
+    padding: 32px 20px 26px;
+  }
+
+  .ctaBox {
+    padding: 24px 20px;
+  }
+
+  .ctaButton {
+    font-size: 13px;
   }
 }
