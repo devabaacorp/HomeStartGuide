@@ -2,9 +2,9 @@ import Link from "next/link";
 import styles from "./ContactPage.module.css";
 
 export const metadata = {
-  title: "Contact HomeStartGuide | First-Time Buyer Support UK",
+  title: "Contact HomeStartGuide | Viewing Companion & Buyer Advocate UK",
   description:
-    "Contact HomeStartGuide for UK first-time buyer guidance, mortgage readiness support, property search direction, and home-buying consultation.",
+    "Contact HomeStartGuide for property viewing assistance, ex-estate agent negotiation support, auction buyer guidance, AML preparation support, and the £500 Viewing Companion Package.",
 };
 
 const address = "40 Winsford Terrace, Great Cambridge Road, London N18 1BS";
@@ -37,12 +37,12 @@ const contactCards = [
 ];
 
 const enquiryTopics = [
-  "First-time buyer consultation",
-  "Mortgage readiness guidance",
-  "Property search support",
-  "Offer and negotiation preparation",
-  "Government scheme awareness",
-  "Survey, legal process, and completion guidance",
+  "Viewing Companion Package (£500)",
+  "Free 15-Min Strategy Call",
+  "Property Viewing Support",
+  "Negotiation Support",
+  "Auction Buyer Guidance",
+  "AML Preparation Support",
 ];
 
 export default function Page() {
@@ -70,14 +70,14 @@ export default function Page() {
 
         <div className="container">
           <div className={styles.sectionHeader}>
-            <p className={styles.preTitle}>Get In Touch</p>
+            <p className={styles.preTitle}>Get Buyer Protection</p>
 
-            <h2>Start Your First Home-Buying Journey With Better Guidance</h2>
+            <h2>Book Viewing Support Before You Offer, Bid, Or Commit</h2>
 
             <p>
-              Contact HomeStartGuide for practical support with first-time buyer
-              preparation, mortgage readiness, property search, offers, legal
-              process awareness, and the next step in your buying journey.
+              Contact HomeStartGuide for hands-on property viewing assistance,
+              ex-estate agent negotiation support, auction buyer guidance, AML
+              preparation support, or a free 15-minute strategy call.
             </p>
           </div>
 
@@ -106,14 +106,15 @@ export default function Page() {
           <div className="row align-items-stretch g-0">
             <div className="col-lg-5">
               <div className={styles.leftPanel}>
-                <p className={styles.preTitle}>Book A Consultation</p>
+                <p className={styles.preTitle}>Book Buyer Support</p>
 
-                <h2>Tell Us Where You Are In The Buying Process</h2>
+                <h2>Tell Us What Property Decision You Are Facing</h2>
 
                 <p>
-                  Whether you are just starting, preparing for a mortgage,
-                  searching for properties, or thinking about making an offer,
-                  we can help you understand the next practical step.
+                  Whether you are preparing for a viewing, dealing with estate
+                  agent pressure, considering an auction bid, or organising AML
+                  documents, HomeStartGuide can help you move forward with more
+                  control.
                 </p>
 
                 <div className={styles.topicList}>
@@ -126,9 +127,11 @@ export default function Page() {
                 </div>
 
                 <div className={styles.noticeBox}>
-                  HomeStartGuide provides general education and practical
-                  guidance. Regulated mortgage, financial, or legal advice
-                  should be taken from qualified professionals where required.
+                  HomeStartGuide provides non-regulated buyer representation,
+                  property viewing assistance, negotiation support, and AML
+                  pre-screening preparation. Regulated mortgage advice and
+                  formal legal conveyancing are provided by qualified
+                  third-party specialists.
                 </div>
               </div>
             </div>
@@ -139,18 +142,30 @@ export default function Page() {
                   <p className={styles.preTitle}>Send Your Enquiry</p>
                   <h2>How Can We Help?</h2>
                   <p>
-                    Complete the enquiry form and our team will review your
-                    request for buyer support, property viewing assistance, or a
-                    free 15-minute strategy call.
+                    Complete the enquiry form and your request will be sent to
+                    HomeStartGuide for buyer support, property viewing
+                    assistance, or a free 15-minute strategy call.
                   </p>
                 </div>
 
                 <form
                   className={styles.contactForm}
-                  action="mailto:info@homestartguide.com"
-                  method="post"
-                  encType="text/plain"
+                  action="https://formsubmit.co/info@homestartguide.com"
+                  method="POST"
                 >
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New HomeStartGuide Buyer Support Enquiry"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://homestartguide.com/contactus/"
+                  />
+
                   <div className={styles.twoColumn}>
                     <input
                       type="text"
@@ -172,22 +187,26 @@ export default function Page() {
 
                     <select
                       name="topic"
-                      defaultValue="First-Time Buyer Consultation"
+                      defaultValue="Viewing Companion Package (£500)"
+                      required
                     >
-                      <option value="First-Time Buyer Consultation">
-                        First-Time Buyer Consultation
+                      <option value="Viewing Companion Package (£500)">
+                        Viewing Companion Package (£500)
                       </option>
-                      <option value="Mortgage Readiness Guidance">
-                        Mortgage Readiness Guidance
+                      <option value="Free 15-Min Strategy Call">
+                        Free 15-Min Strategy Call
                       </option>
-                      <option value="Property Search Support">
-                        Property Search Support
+                      <option value="Property Viewing Support">
+                        Property Viewing Support
                       </option>
-                      <option value="Offer & Negotiation Guidance">
-                        Offer & Negotiation Guidance
+                      <option value="Negotiation Support">
+                        Negotiation Support
                       </option>
-                      <option value="Legal Process Awareness">
-                        Legal Process Awareness
+                      <option value="Auction Buyer Guidance">
+                        Auction Buyer Guidance
+                      </option>
+                      <option value="AML Preparation Support">
+                        AML Preparation Support
                       </option>
                     </select>
                   </div>
@@ -196,17 +215,17 @@ export default function Page() {
                     type="text"
                     name="subject"
                     placeholder="Subject"
-                    defaultValue="HomeStartGuide Consultation Enquiry"
+                    defaultValue="HomeStartGuide Buyer Support Enquiry"
                   />
 
                   <textarea
                     name="message"
-                    placeholder="Tell us what stage you are at and what help you need."
+                    placeholder="Tell us about the property, viewing, offer, auction, or document issue you need help with."
                     required
                   ></textarea>
 
                   <button type="submit" className={styles.submitButton}>
-                    Send Message
+                    Send Buyer Support Enquiry
                   </button>
                 </form>
 
@@ -250,16 +269,16 @@ export default function Page() {
         <div className="container">
           <div className={styles.ctaBox}>
             <div>
-              <p>Ready To Begin?</p>
-              <h2>Buy Your First Home With More Clarity</h2>
+              <p>Ready To View With Confidence?</p>
+              <h2>Secure Your £500 Viewing Companion Package</h2>
               <span>
-                Speak with HomeStartGuide and understand your next step before
-                moving forward.
+                Get ex-agent buyer protection before you view, offer, bid, or
+                commit to a property decision.
               </span>
             </div>
 
-            <Link href="/#buyer-roadmap" className={styles.ctaButton}>
-              View Buyer Roadmap
+            <Link href="/contactus" className={styles.ctaButton}>
+              Secure Your £500 Package Today
             </Link>
           </div>
         </div>
