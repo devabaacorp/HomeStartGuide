@@ -2,57 +2,57 @@ import Link from "next/link";
 import styles from "./AboutUsPage.module.css";
 
 export const metadata = {
-  title: "About HomeStartGuide | First-Time Buyer Support UK",
+  title: "About HomeStartGuide | Buyer Advocate & Viewing Companion UK",
   description:
-    "Learn about HomeStartGuide and how we help UK first-time buyers understand mortgages, property search, government schemes, offers, legal steps, and completion planning.",
+    "Learn about HomeStartGuide and how we support UK buyers with property viewing assistance, ex-estate agent negotiation insight, auction buyer guidance, AML preparation support, and the £500 Viewing Companion Package.",
 };
 
 const supportAreas = [
   {
-    title: "First-Time Buyer Guidance",
-    text: "We help buyers understand the full journey before they start making important decisions.",
+    title: "Viewing Companion Support",
+    text: "We attend property viewings with buyers and help them notice visible risks before making rushed decisions.",
     icon: "01",
   },
   {
-    title: "Mortgage Readiness Support",
-    text: "We guide buyers on what to prepare before speaking with qualified mortgage professionals.",
+    title: "Visible Red Flag Awareness",
+    text: "We help buyers think clearly about damp signs, poor maintenance, hidden cost indicators, and practical property concerns.",
     icon: "02",
   },
   {
-    title: "Property Search Direction",
-    text: "We help buyers compare locations, property suitability, budget, and practical next steps.",
+    title: "Ex-Agent Negotiation Insight",
+    text: "We help buyers prepare for negotiation, avoid emotional overbidding, and respond better to estate agent pressure.",
     icon: "03",
   },
   {
-    title: "Offer & Process Awareness",
-    text: "We explain the key stages from making an offer to surveys, legal checks, and completion.",
+    title: "Auction & AML Preparation",
+    text: "We support buyers with auction risk awareness, deposit traps, proof of funds preparation, and AML readiness.",
     icon: "04",
   },
 ];
 
 const roadmap = [
-  "Understand your budget and affordability",
-  "Prepare your deposit and buying costs",
-  "Get mortgage-ready with the right documents",
-  "Learn about possible government schemes",
-  "Search for properties with clearer criteria",
-  "Make informed offers with less confusion",
-  "Understand survey and conveyancing steps",
-  "Prepare for exchange, completion, and moving in",
+  "Book a free 15-minute strategy call",
+  "Share the property, viewing, offer, or auction details",
+  "Secure the £500 Viewing Companion Package",
+  "Attend the viewing with practical buyer support",
+  "Review visible red flags and buying risks",
+  "Prepare a sensible negotiation or offer approach",
+  "Understand auction, deposit, and AML preparation points",
 ];
 
 const values = [
   {
-    title: "Clear Guidance",
-    text: "We explain the home-buying process in simple, practical language so first-time buyers know what to do next.",
+    title: "Buyer Protection First",
+    text: "We focus on helping buyers avoid costly property mistakes before they view, offer, bid, or commit.",
   },
   {
-    title: "Buyer-Focused Support",
-    text: "Our guidance is designed around the questions, worries, and decisions first-time buyers commonly face.",
+    title: "Practical Ex-Agent Insight",
+    text: "Our support is shaped around estate agent pressure, negotiation behaviour-Agent Insight",
+    text: "Our support is shaped around estate agent pressure, negotiation behaviour, viewing risks, and buyer decision-making.",
   },
   {
-    title: "Practical Direction",
-    text: "We do not just explain theory. We help buyers think through preparation, timing, documents, and next steps.",
+    title: "Clear Non-Regulated Support",
+    text: "We provide practical buyer representation and preparation support while regulated advice remains with qualified specialists.",
   },
 ];
 
@@ -60,17 +60,22 @@ const faqs = [
   {
     question: "Is HomeStartGuide an estate agent?",
     answer:
-      "HomeStartGuide is a first-time buyer support and guidance platform. We help buyers understand the process and prepare better before taking important steps.",
+      "No. HomeStartGuide is a buyer support and viewing companion service. We work from the buyer’s side to help with viewing preparation, visible red flag awareness, negotiation support, auction risk guidance, and AML preparation.",
   },
   {
-    question: "Do you provide regulated mortgage advice?",
+    question: "Do you provide formal building surveys?",
     answer:
-      "We provide general mortgage readiness guidance. Regulated mortgage or financial advice should be taken from qualified and authorised professionals where required.",
+      "No. HomeStartGuide does not provide formal building surveys, structural reports, or RICS-level inspections. We help buyers notice visible warning signs and practical concerns. Formal surveys should be handled by qualified surveyors.",
   },
   {
-    question: "Can you help before I start viewing properties?",
+    question: "What is included in the £500 Viewing Companion Package?",
     answer:
-      "Yes. In fact, preparing before viewing properties is one of the best ways to avoid confusion, wasted time, and emotional decisions.",
+      "The £500 package is a one-off buyer support service designed to help before a property decision. It can include viewing assistance, practical questions to ask, visible red flag awareness, negotiation preparation, and buyer risk guidance.",
+  },
+  {
+    question: "Do you provide mortgage, financial, or legal advice?",
+    answer:
+      "No. HomeStartGuide provides non-regulated buyer representation, property viewing assistance, negotiation support, and AML pre-screening preparation. Regulated mortgage advice, financial advice, legal advice, and conveyancing should be handled by qualified third-party professionals.",
   },
 ];
 
@@ -102,18 +107,18 @@ export default function Page() {
                 <img
                   className={styles.mainImage}
                   src="/assets/images/about/main/about-03.jpg"
-                  alt="First-time buyer guidance in the UK"
+                  alt="Buyer advocate property viewing support in the UK"
                 />
 
                 <img
                   className={styles.secondaryImage}
                   src="/assets/images/about/main/about-04.jpg"
-                  alt="Home buying consultation support"
+                  alt="HomeStartGuide buyer consultation support"
                 />
 
                 <div className={styles.experienceBadge}>
-                  <strong>Step-by-Step</strong>
-                  <span>First-Time Buyer Support</span>
+                  <strong>£500</strong>
+                  <span>Viewing Companion Package</span>
                 </div>
               </div>
             </div>
@@ -122,26 +127,28 @@ export default function Page() {
               <div className={styles.heroContent}>
                 <p className={styles.preTitle}>About HomeStartGuide</p>
 
-                <h2>Helping First-Time Buyers Move With More Confidence</h2>
+                <h2>
+                  Buyer Advocate Support Before You Make A Costly Decision
+                </h2>
 
                 <p>
-                  HomeStartGuide exists to make the UK home-buying journey
-                  easier to understand for first-time buyers. Buying a first
-                  home can feel overwhelming because there are many moving
-                  parts: budget, deposit, mortgage preparation, property search,
-                  offers, surveys, legal steps, and completion.
+                  HomeStartGuide supports first-time buyers and auction buyers
+                  before they view, offer, bid, or commit. Property decisions
+                  can become expensive very quickly when buyers feel pressured,
+                  miss visible red flags, overbid emotionally, or fail to
+                  prepare documents before solicitor or agent checks.
                 </p>
 
                 <p>
-                  We help buyers understand what to prepare, what questions to
-                  ask, and what steps usually come next. Our goal is to give
-                  practical direction so buyers feel less confused and more
-                  prepared before making important decisions.
+                  Our focus is practical buyer protection. We help buyers attend
+                  viewings with more confidence, understand visible property
+                  concerns, prepare for negotiation, think clearly about auction
+                  risks, and organise proof of funds or AML preparation points.
                 </p>
 
                 <div className={styles.heroButtons}>
                   <Link href="/contactus" className={styles.primaryButton}>
-                    Book a Consultation
+                    Book £500 Viewing Companion
                   </Link>
 
                   <Link
@@ -153,9 +160,11 @@ export default function Page() {
                 </div>
 
                 <div className={styles.notice}>
-                  HomeStartGuide provides general education and practical
-                  guidance. Regulated mortgage, financial, or legal advice
-                  should be taken from qualified professionals where required.
+                  HomeStartGuide provides non-regulated buyer representation,
+                  property viewing assistance, negotiation support, and AML
+                  pre-screening preparation. Formal building surveys, regulated
+                  mortgage advice, financial advice, and legal conveyancing are
+                  provided by qualified third-party specialists.
                 </div>
               </div>
             </div>
@@ -169,12 +178,11 @@ export default function Page() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <p className={styles.preTitle}>What We Help With</p>
-            <h2>
-              Practical Support For The Key Stages Of Buying Your First Home
-            </h2>
+            <h2>Practical Protection For Buyers Before They Commit</h2>
             <p>
-              We focus on the areas where first-time buyers usually need the
-              most clarity before moving forward.
+              We focus on the points where buyers are most exposed to risk:
+              viewings, red flags, estate agent pressure, offers, auctions,
+              deposit decisions, and AML preparation.
             </p>
           </div>
 
@@ -198,11 +206,12 @@ export default function Page() {
             <div className="col-lg-5">
               <div className={styles.missionBox}>
                 <p className={styles.preTitle}>Our Mission</p>
-                <h2>Making The First Home Journey Easier To Understand</h2>
+                <h2>Helping Buyers Avoid Expensive Property Mistakes</h2>
                 <p>
-                  Our mission is to help first-time buyers approach the process
-                  with better preparation, better questions, and better
-                  awareness of the steps ahead.
+                  Our mission is to give buyers practical support before they
+                  make important property decisions. We help buyers slow down,
+                  ask better questions, recognise visible risks, and move
+                  forward with a clearer plan.
                 </p>
               </div>
             </div>
@@ -226,15 +235,16 @@ export default function Page() {
           <div className="row align-items-start g-5">
             <div className="col-lg-5">
               <div className={styles.roadmapIntro}>
-                <p className={styles.preTitle}>Our Guidance Approach</p>
-                <h2>A Clear Roadmap From Preparation To Completion</h2>
+                <p className={styles.preTitle}>Our Support Approach</p>
+                <h2>A Clear Process Before You View, Offer, Bid, Or Commit</h2>
                 <p>
-                  We help buyers look at the journey step by step, instead of
-                  feeling overwhelmed by the full process at once.
+                  Our process is designed to help buyers understand the next
+                  practical step before they risk money, time, or a binding
+                  property decision.
                 </p>
 
                 <Link href="/contactus" className={styles.primaryButton}>
-                  Start Your Buyer Journey
+                  Start With A Strategy Call
                 </Link>
               </div>
             </div>
@@ -275,16 +285,16 @@ export default function Page() {
         <div className="container">
           <div className={styles.ctaBox}>
             <div>
-              <p>Ready To Get Started?</p>
-              <h2>Buy Your First Home With Better Clarity</h2>
+              <p>Ready To View With Confidence?</p>
+              <h2>Secure Your £500 Viewing Companion Package</h2>
               <span>
-                Speak with HomeStartGuide and understand your next practical
-                step as a first-time buyer.
+                Get practical buyer protection before you view, offer, bid, or
+                commit to a property decision.
               </span>
             </div>
 
             <Link href="/contactus" className={styles.ctaButton}>
-              Book a Consultation
+              Book £500 Viewing Companion
             </Link>
           </div>
         </div>
