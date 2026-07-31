@@ -15,7 +15,7 @@ const contactDetails = [
   },
   {
     icon: "fas fa-map-marker-alt",
-    title: "Visit / Postal Address",
+    title: "Postal Address",
     text: "40 Winsford Terrace, Great Cambridge Road, London N18 1BS",
     href: "#map",
   },
@@ -28,16 +28,17 @@ export default function ContactSection() {
 
       <div className="container">
         <div className={styles.sectionHeader}>
-          <p className={styles.preTitle}>Get In Touch</p>
+          <p className={styles.preTitle}>Book Buyer Support</p>
 
           <h2 className={styles.title}>
-            Start Your First Home-Buying Journey With Better Guidance
+            Get Practical Protection Before You View, Offer, Bid, Or Commit
           </h2>
 
           <p className={styles.introText}>
-            Have questions about buying your first home, mortgage readiness,
-            property search, or the next step in the process? Contact
-            HomeStartGuide and we will guide you in the right direction.
+            Have a property viewing coming up, dealing with estate agent
+            pressure, preparing an auction bid, or unsure about AML documents?
+            Contact HomeStartGuide for buyer support, viewing assistance, or a
+            free 15-minute strategy call.
           </p>
         </div>
 
@@ -46,14 +47,14 @@ export default function ContactSection() {
             <div className={styles.imagePanel}>
               <img
                 src="/assets/images/contact/01.jpg"
-                alt="Contact HomeStartGuide"
+                alt="Contact HomeStartGuide for buyer support"
               />
 
               <div className={styles.imageOverlay}>
-                <h3>Need help getting started?</h3>
+                <h3>Ready to view with confidence?</h3>
                 <p>
-                  Speak with us and understand your next practical step as a
-                  first-time buyer.
+                  Secure your £500 Viewing Companion package and get practical
+                  support before making a costly property decision.
                 </p>
               </div>
             </div>
@@ -81,20 +82,33 @@ export default function ContactSection() {
               </div>
 
               <div className={styles.formHeader}>
-                <p className={styles.formPreTitle}>Book A Consultation</p>
-                <h3>Send Your Enquiry</h3>
+                <p className={styles.formPreTitle}>Send Your Enquiry</p>
+                <h3>How Can We Help?</h3>
                 <p>
-                  Fill in the form below. For now, this form opens your email
-                  app. A direct website form handler can be connected later.
+                  Complete the form below and your request will be sent to
+                  HomeStartGuide for buyer support, property viewing assistance,
+                  negotiation guidance, auction support, or AML preparation.
                 </p>
               </div>
 
               <form
                 className={styles.contactForm}
-                action="mailto:info@homestartguide.com"
-                method="post"
-                encType="text/plain"
+                action="https://formsubmit.co/info@homestartguide.com"
+                method="POST"
               >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New HomeStartGuide Homepage Buyer Support Enquiry"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://homestartguide.com/"
+                />
+
                 <div className={styles.twoColumn}>
                   <input
                     type="text"
@@ -114,29 +128,56 @@ export default function ContactSection() {
                 <div className={styles.twoColumn}>
                   <input type="tel" placeholder="Phone Number" name="phone" />
 
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    name="subject"
-                    defaultValue="First-Time Buyer Consultation"
-                  />
+                  <select
+                    name="topic"
+                    defaultValue="Viewing Companion Package (£500)"
+                    required
+                  >
+                    <option value="Viewing Companion Package (£500)">
+                      Viewing Companion Package (£500)
+                    </option>
+                    <option value="Free 15-Min Strategy Call">
+                      Free 15-Min Strategy Call
+                    </option>
+                    <option value="Property Viewing Support">
+                      Property Viewing Support
+                    </option>
+                    <option value="Negotiation Support">
+                      Negotiation Support
+                    </option>
+                    <option value="Auction Buyer Guidance">
+                      Auction Buyer Guidance
+                    </option>
+                    <option value="AML Preparation Support">
+                      AML Preparation Support
+                    </option>
+                  </select>
                 </div>
 
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  defaultValue="HomeStartGuide Buyer Support Enquiry"
+                />
+
                 <textarea
-                  placeholder="Tell us what stage you are at — mortgage preparation, property search, offer, legal process, or just starting."
+                  placeholder="Tell us about the property, viewing, offer, auction, or document issue you need help with."
                   name="message"
                   required
                 ></textarea>
 
                 <button type="submit" className={styles.submitButton}>
-                  Send Message
+                  Send Buyer Support Enquiry
                 </button>
               </form>
 
               <p className={styles.disclaimer}>
-                HomeStartGuide provides general education and practical
-                guidance. Regulated mortgage, financial, or legal advice should
-                be taken from qualified professionals where required.
+                HomeStartGuide provides non-regulated buyer representation,
+                property viewing assistance, negotiation support, and AML
+                pre-screening preparation. Formal building surveys, regulated
+                mortgage advice, and legal conveyancing are provided by
+                qualified third-party specialists.
               </p>
             </div>
           </div>
