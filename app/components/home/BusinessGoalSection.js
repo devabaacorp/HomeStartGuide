@@ -4,51 +4,45 @@ import styles from "./BusinessGoalSection.module.css";
 const roadmapSteps = [
   {
     number: "01",
-    title: "Check Your Affordability",
+    title: "Start With A Free Strategy Call",
     description:
-      "Understand your income, expenses, deposit target, credit position, and realistic buying budget.",
+      "Tell us about your property search, viewing plan, auction interest, or offer situation so we can understand where support is needed.",
   },
   {
     number: "02",
-    title: "Prepare Your Deposit",
+    title: "Share The Property Details",
     description:
-      "Plan your savings, understand deposit requirements, and prepare the documents usually needed.",
+      "Send the listing, viewing time, location, guide price, auction details, or any concerns you already have about the property.",
   },
   {
     number: "03",
-    title: "Get Mortgage Ready",
+    title: "Book Your Viewing Companion",
     description:
-      "Learn about Agreement in Principle, lender expectations, and affordability checks.",
+      "Secure hands-on viewing support for a flat £500 one-off fee before you attend, offer, bid, or commit.",
   },
   {
     number: "04",
-    title: "Understand Government Schemes",
+    title: "Attend The Viewing With Support",
     description:
-      "Explore available first-time buyer schemes and understand basic eligibility points.",
+      "We attend the viewing with you, observe visible red flags, ask practical questions, and help you stay calm under pressure.",
   },
   {
     number: "05",
-    title: "Search The Right Property",
+    title: "Review Red Flags & Buying Risks",
     description:
-      "Compare locations, property types, transport links, local value, and long-term suitability.",
+      "Understand visible issues such as damp signs, poor maintenance, hidden cost indicators, location concerns, and pressure tactics.",
   },
   {
     number: "06",
-    title: "Make A Sensible Offer",
+    title: "Negotiate With Ex-Agent Insight",
     description:
-      "Understand market value, negotiation basics, and how to avoid rushed decisions.",
+      "Use estate-agency experience to avoid emotional overbidding, challenge inflated pricing, and move forward with a sensible offer strategy.",
   },
   {
     number: "07",
-    title: "Survey & Legal Process",
+    title: "Prepare For Auction & AML Checks",
     description:
-      "Understand surveys, searches, solicitor communication, contracts, and mortgage offer.",
-  },
-  {
-    number: "08",
-    title: "Complete & Move In",
-    description:
-      "Prepare for exchange, completion day, moving arrangements, and final checks.",
+      "Get practical support with auction risk awareness, deposit traps, proof of funds preparation, and AML pre-screening readiness.",
   },
 ];
 
@@ -60,16 +54,17 @@ export default function BusinessGoalSection() {
 
         <div className="container">
           <div className={styles.sectionHeader}>
-            <p className={styles.preTitle}>First-Time Buyer Roadmap</p>
+            <p className={styles.preTitle}>Buyer Advocate Roadmap</p>
 
             <h2 className={styles.title}>
-              A Clear Step-By-Step Path To Buying Your First Home
+              A Practical Path Before You View, Offer, Bid, Or Commit
             </h2>
 
             <p className={styles.introText}>
-              HomeStartGuide helps you understand the full buying journey before
-              you commit — from affordability and mortgage preparation to
-              property search, legal steps, completion, and moving in.
+              HomeStartGuide helps first-time buyers and auction buyers move
+              forward with confidence through viewing support, visible red flag
+              awareness, ex-estate agent negotiation insight, auction guidance,
+              and AML preparation support.
             </p>
           </div>
 
@@ -79,18 +74,18 @@ export default function BusinessGoalSection() {
                 <img
                   className={styles.mainImage}
                   src="/assets/images/business-goal/01.jpg"
-                  alt="UK first-time buyer guidance"
+                  alt="Buyer advocate property viewing support"
                 />
 
                 <img
                   className={styles.smallImage}
                   src="/assets/images/business-goal/sm-01.jpg"
-                  alt="Home buying consultation"
+                  alt="Property viewing companion consultation"
                 />
 
                 <div className={styles.imageBadge}>
-                  <span>8</span>
-                  <p>Simple steps from planning to completion</p>
+                  <span>7</span>
+                  <p>Practical steps before you view, offer, bid, or commit</p>
                 </div>
               </div>
             </div>
@@ -111,28 +106,31 @@ export default function BusinessGoalSection() {
 
               <div className={styles.ctaBox}>
                 <div>
-                  <h3>Need help understanding where to start?</h3>
+                  <h3>Need support before your next viewing?</h3>
                   <p>
-                    Speak with HomeStartGuide and get practical direction for
-                    your first home-buying journey.
+                    Get ex-agent buyer protection, practical viewing support,
+                    and negotiation guidance before making a costly property
+                    decision.
                   </p>
                 </div>
 
                 <div className={styles.buttonGroup}>
                   <Link href="/contactus" className={styles.primaryButton}>
-                    Book a Consultation
+                    Book £500 Viewing Companion
                   </Link>
 
-                  <Link href="/#service" className={styles.secondaryButton}>
-                    View Our Services
+                  <Link href="/contactus" className={styles.secondaryButton}>
+                    Free 15-Min Strategy Call
                   </Link>
                 </div>
               </div>
 
               <p className={styles.disclaimer}>
-                This roadmap is for general education and practical guidance.
-                Mortgage, financial, and legal advice should be taken from
-                qualified professionals where required.
+                HomeStartGuide provides non-regulated buyer representation,
+                property viewing assistance, negotiation support, and AML
+                pre-screening preparation. Formal building surveys, regulated
+                mortgage advice, and legal conveyancing are provided by
+                qualified third-party specialists.
               </p>
             </div>
           </div>
