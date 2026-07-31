@@ -3,34 +3,44 @@ import styles from "./FAQSection.module.css";
 
 const faqs = [
   {
-    question: "What does HomeStartGuide help first-time buyers with?",
+    question: "What is the £500 Viewing Companion Package?",
     answer:
-      "HomeStartGuide helps first-time buyers understand the home-buying process in a clearer way, including mortgage preparation, deposit planning, property search, government scheme awareness, offer preparation, survey steps, legal process awareness, and completion planning.",
+      "The £500 Viewing Companion Package is a one-off buyer support service where HomeStartGuide helps you before a property decision. The support can include property viewing assistance, visible red flag awareness, practical questions to ask, negotiation preparation, and buyer risk guidance before you view, offer, bid, or commit.",
   },
   {
-    question: "Do you provide mortgage advice?",
+    question: "Do you attend property viewings in person?",
     answer:
-      "HomeStartGuide provides general mortgage readiness guidance and helps buyers understand what to prepare before speaking with qualified mortgage professionals. Regulated mortgage or financial advice should be taken from authorised professionals where required.",
+      "Yes. HomeStartGuide can attend property viewings with you as a buyer companion. The aim is to help you stay calm, ask better questions, notice visible warning signs, and avoid pressure-led decisions during the viewing.",
   },
   {
-    question: "Can you help me understand government schemes?",
+    question: "Do you provide a formal building survey?",
     answer:
-      "Yes. We can help explain the general idea of available first-time buyer schemes and what points you may need to consider. Scheme availability and eligibility can change, so official sources or qualified professionals should be checked before making decisions.",
+      "No. HomeStartGuide does not provide formal building surveys, structural reports, or RICS-level inspections. We help buyers understand visible red flags such as damp signs, poor maintenance, possible hidden cost indicators, and practical concerns. Formal surveys should be carried out by qualified surveyors.",
   },
   {
-    question: "Can you help me search for the right property?",
+    question: "Can you help with negotiation?",
     answer:
-      "Yes. We can guide you on how to compare properties, locations, transport links, local facilities, affordability, hidden costs, and long-term suitability before shortlisting homes.",
+      "Yes. HomeStartGuide can help buyers prepare for negotiation using ex-estate agent insight. This can include understanding pressure tactics, avoiding emotional overbidding, challenging inflated pricing, and preparing a sensible offer approach.",
+  },
+  {
+    question: "Can you support auction buyers?",
+    answer:
+      "Yes. We can help auction buyers understand practical risks before bidding, including guide price traps, legal pack concerns, deposit risks, non-refundable commitment issues, and the importance of preparing documents before auction deadlines.",
+  },
+  {
+    question: "What does AML preparation support mean?",
+    answer:
+      "AML preparation support means helping you understand and organise common proof of funds and source of funds documents before solicitor or agent checks. HomeStartGuide does not carry out regulated AML verification but can help you prepare for the process more clearly.",
+  },
+  {
+    question: "Do you provide mortgage, financial, or legal advice?",
+    answer:
+      "No. HomeStartGuide provides non-regulated buyer representation, property viewing assistance, negotiation support, and AML pre-screening preparation. Regulated mortgage advice, financial advice, legal advice, and conveyancing should be handled by qualified third-party professionals.",
   },
   {
     question: "When should I contact HomeStartGuide?",
     answer:
-      "You can contact us before you start searching, while preparing for a mortgage, before making an offer, or when you feel confused about the next step in the buying process.",
-  },
-  {
-    question: "Do you handle the legal or conveyancing process?",
-    answer:
-      "We provide general awareness of the conveyancing and legal process so buyers understand the steps involved. Actual legal advice and conveyancing work should be handled by qualified legal professionals.",
+      "You should contact HomeStartGuide before attending a viewing, making an offer, bidding at auction, paying a deposit, or committing to a property decision. You can also contact us for a free 15-minute strategy call before deciding whether the £500 package is right for you.",
   },
 ];
 
@@ -45,23 +55,24 @@ export default function FAQSection() {
             <div className={styles.leftContent}>
               <p className={styles.preTitle}>Frequently Asked Questions</p>
 
-              <h2>Questions First-Time Buyers Often Ask</h2>
+              <h2>Questions Buyers Ask Before Viewing, Offering, Or Bidding</h2>
 
               <p>
-                Buying your first home can feel confusing. These answers explain
-                how HomeStartGuide supports buyers with practical guidance,
-                preparation, and step-by-step clarity.
+                These answers explain how HomeStartGuide supports first-time
+                buyers and auction buyers with practical buyer protection,
+                viewing assistance, negotiation preparation, auction risk
+                guidance, and AML document readiness.
               </p>
 
               <div className={styles.ctaBox}>
                 <h3>Still have questions?</h3>
                 <p>
-                  Speak with HomeStartGuide and understand your next practical
-                  step.
+                  Book a free 15-minute strategy call or secure the £500 Viewing
+                  Companion Package before your next property decision.
                 </p>
 
                 <Link href="/contactus" className={styles.ctaButton}>
-                  Book a Consultation
+                  Book £500 Viewing Companion
                 </Link>
               </div>
             </div>
@@ -82,9 +93,11 @@ export default function FAQSection() {
             </div>
 
             <p className={styles.disclaimer}>
-              HomeStartGuide provides general education and practical guidance.
-              Regulated mortgage, financial, or legal advice should be taken
-              from qualified professionals where required.
+              HomeStartGuide provides non-regulated buyer representation,
+              property viewing assistance, negotiation support, and AML
+              pre-screening preparation. Formal building surveys, regulated
+              mortgage advice, financial advice, and legal conveyancing are
+              provided by qualified third-party specialists.
             </p>
           </div>
         </div>

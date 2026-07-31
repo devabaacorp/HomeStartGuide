@@ -78,6 +78,7 @@
   color: var(--hsg-white);
   font-size: 24px;
   font-weight: 900;
+  line-height: 1.25;
 }
 
 .ctaBox p {
@@ -89,22 +90,29 @@
 
 .ctaButton {
   min-height: 52px;
-  padding: 0 26px;
+  padding: 0 24px;
   border-radius: 999px;
   background: var(--hsg-red);
   color: var(--hsg-white);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 900;
+  line-height: 1;
+  text-align: center;
   text-decoration: none;
+  white-space: nowrap;
   transition: 0.2s ease;
 }
 
-.ctaButton:hover {
+.ctaButton:visited,
+.ctaButton:hover,
+.ctaButton:focus,
+.ctaButton:active {
   background: var(--hsg-red-dark);
-  color: var(--hsg-white);
+  color: var(--hsg-white) !important;
+  text-decoration: none;
 }
 
 .faqList {
@@ -160,7 +168,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
+  flex: 0 0 42px;
   font-size: 14px;
   font-weight: 900;
 }
@@ -226,6 +234,10 @@
     align-items: flex-start;
   }
 
+  .faqItem summary::after {
+    font-size: 24px;
+  }
+
   .faqItem p {
     padding: 0 22px 24px 22px;
     font-size: 14px;
@@ -237,6 +249,8 @@
 
   .ctaButton {
     width: 100%;
+    padding: 0 18px;
+    white-space: normal;
   }
 
   .disclaimer {
@@ -267,5 +281,6 @@
   .faqItem summary span {
     width: 36px;
     height: 36px;
+    flex-basis: 36px;
   }
 }
