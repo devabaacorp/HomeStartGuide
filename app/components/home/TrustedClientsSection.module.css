@@ -38,7 +38,7 @@
 }
 
 .sectionHeader {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto 52px;
   text-align: center;
 }
@@ -61,7 +61,7 @@
 }
 
 .introText {
-  max-width: 720px;
+  max-width: 760px;
   margin: 18px auto 0;
   color: var(--hsg-muted);
   font-size: 16px;
@@ -76,6 +76,7 @@
 
 .guidanceCard {
   height: 100%;
+  min-height: 245px;
   padding: 30px 26px;
   border: 1px solid var(--hsg-border);
   border-radius: 24px;
@@ -123,7 +124,34 @@
   line-height: 1.7;
 }
 
+.noteBox {
+  max-width: 980px;
+  margin: 42px auto 0;
+  padding: 16px 20px;
+  border-left: 4px solid var(--hsg-red);
+  border-radius: 12px;
+  background: var(--hsg-light-red);
+  color: var(--hsg-muted);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
 /* Responsive */
+
+@media screen and (max-width: 1199px) {
+  .guidanceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .guidanceCard {
+    min-height: 225px;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .trustedSection {
@@ -139,8 +167,8 @@
     font-size: 34px;
   }
 
-  .guidanceGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .sectionHeader {
+    margin-bottom: 42px;
   }
 }
 
@@ -167,7 +195,16 @@
   }
 
   .guidanceCard {
+    min-height: auto;
     padding: 26px 22px;
+  }
+
+  .guidanceCard h3 {
+    font-size: 20px;
+  }
+
+  .noteBox {
+    font-size: 13px;
   }
 }
 
@@ -179,7 +216,22 @@
     line-height: 1.05;
   }
 
+  .trustedSection {
+    padding: 72px 0;
+  }
+
   .title {
     font-size: 26px;
+  }
+
+  .guidanceCard {
+    padding: 24px 20px;
+  }
+
+  .numberBox {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    font-size: 15px;
   }
 }
