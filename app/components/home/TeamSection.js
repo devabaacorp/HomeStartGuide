@@ -4,51 +4,52 @@ import styles from "./TeamSection.module.css";
 const supportTeam = [
   {
     image: "/assets/images/team/tm/01.jpg",
-    title: "Mortgage Preparation Support",
-    role: "Affordability & Readiness",
+    title: "Viewing Companion Support",
+    role: "In-Person Buyer Assistance",
     description:
-      "Helping first-time buyers understand deposit planning, affordability basics, Agreement in Principle, and mortgage preparation steps.",
+      "Attend property viewings with practical support, a second pair of experienced eyes, and help spotting visible warning signs before you commit.",
   },
   {
     image: "/assets/images/team/tm/02.jpg",
-    title: "Property Search Guidance",
-    role: "Location & Home Comparison",
+    title: "Ex-Estate Agent Negotiation",
+    role: "Offer & Price Strategy",
     description:
-      "Supporting buyers with property search, location comparison, viewing preparation, transport links, local value, and hidden risks.",
+      "Use estate-agency insight to understand pressure tactics, avoid emotional overbidding, challenge inflated pricing, and prepare a sensible offer.",
   },
   {
     image: "/assets/images/team/tm/03.jpg",
-    title: "Buyer Roadmap Support",
-    role: "Step-By-Step Buying Journey",
+    title: "Auction Buyer Guidance",
+    role: "Deposit & Bidding Risk Awareness",
     description:
-      "Guiding first-time buyers through the major stages from early planning to offer, legal process, completion, and moving in.",
+      "Understand auction risks, guide price traps, legal pack concerns, non-refundable deposits, and the practical risks before placing a bid.",
   },
   {
     image: "/assets/images/team/tm/04.jpg",
-    title: "Legal Process Awareness",
-    role: "Survey, Solicitor & Completion",
+    title: "AML Preparation Support",
+    role: "Proof Of Funds Readiness",
     description:
-      "Helping buyers understand surveys, searches, solicitor communication, contracts, exchange, completion, and key buying documents.",
+      "Get practical preparation support for proof of funds, source of funds awareness, AML pre-screening readiness, and document organisation.",
   },
 ];
 
 export default function TeamSection() {
   return (
     <section className={styles.teamSection} id="team">
-      <span className={styles.backgroundText}>Support Team</span>
+      <span className={styles.backgroundText}>Buyer Advocates</span>
 
       <div className="container">
         <div className={styles.sectionHeader}>
-          <p className={styles.preTitle}>HomeStartGuide Team</p>
+          <p className={styles.preTitle}>Who Supports You</p>
 
           <h2 className={styles.title}>
-            Guidance From People Who Understand The First-Time Buyer Journey
+            Practical Buyer Advocate Support Before You Make A Costly Decision
           </h2>
 
           <p className={styles.introText}>
-            Our support is focused on helping UK first-time buyers understand
-            the process clearly, ask better questions, avoid common mistakes,
-            and move forward with more confidence.
+            HomeStartGuide supports first-time buyers and auction buyers before
+            viewing, offering, bidding, or committing. Our focus is practical
+            buyer protection, visible red flag awareness, negotiation support,
+            auction risk guidance, and AML preparation.
           </p>
         </div>
 
@@ -69,7 +70,7 @@ export default function TeamSection() {
                   <p>{member.description}</p>
 
                   <Link href="/contactus" className={styles.cardButton}>
-                    Get Support
+                    Get Buyer Support
                     <i className="far fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -79,16 +80,25 @@ export default function TeamSection() {
         </div>
 
         <div className={styles.noticeBox}>
-          <p>
-            HomeStartGuide provides general education and practical guidance.
-            Regulated mortgage, financial, or legal advice should be taken from
-            qualified professionals where required.
-          </p>
+          <div>
+            <h3>Ready To View With More Confidence?</h3>
+            <p>
+              Secure practical buyer protection for a flat £500 one-off fee and
+              get support before you view, offer, bid, or commit.
+            </p>
+          </div>
 
           <Link href="/contactus" className={styles.noticeButton}>
-            Book a Consultation
+            Book £500 Viewing Companion
           </Link>
         </div>
+
+        <p className={styles.disclaimer}>
+          HomeStartGuide provides non-regulated buyer representation, property
+          viewing assistance, negotiation support, and AML pre-screening
+          preparation. Formal building surveys, regulated mortgage advice, and
+          legal conveyancing are provided by qualified third-party specialists.
+        </p>
       </div>
     </section>
   );
