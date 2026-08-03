@@ -163,7 +163,7 @@ export default function Page() {
                   <input
                     type="hidden"
                     name="_next"
-                    value="https://homestartguide.com/contactus/"
+                    value="https://homestartguide.com/thank-you/"
                   />
 
                   <div className={styles.twoColumn}>

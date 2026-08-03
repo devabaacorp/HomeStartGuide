@@ -106,7 +106,7 @@ export default function ContactSection() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://homestartguide.com/"
+                  value="https://homestartguide.com/thank-you/"
                 />
 
                 <div className={styles.twoColumn}>
