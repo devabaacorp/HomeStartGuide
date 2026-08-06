@@ -425,3 +425,18 @@
   background: #b91c1c;
   color: #ffffff !important;
 }
+.ctaButton {
+  background: #d62828 !important;
+  color: #ffffff !important;
+  border: 2px solid #d62828 !important;
+}
+
+.ctaButton:visited,
+.ctaButton:hover,
+.ctaButton:focus,
+.ctaButton:active {
+  background: #b91c1c !important;
+  color: #ffffff !important;
+  border-color: #b91c1c !important;
+  text-decoration: none !important;
+}
